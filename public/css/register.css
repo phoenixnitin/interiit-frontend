@@ -1,0 +1,10 @@
+#register-page {
+  margin: 10px;
+}
+#register-page .form-group {
+  margin: 0 auto 10px auto;
+  max-width: 400px;
+}
+#register-page #btn1 {
+  text-align: center;
+}
