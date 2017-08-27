@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var port = 2536;
+var port = 2345;
 app.get('/', function(req, res){
         res.send('Hello, InterIIT Website is in Progress.');
 });
