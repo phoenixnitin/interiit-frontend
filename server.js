@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var path = require('path');
-var port = 8800;
+var port = 2345;
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.get('/', function(req, res){
