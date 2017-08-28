@@ -9,7 +9,7 @@ require(['backbone', 'jquery', 'underscore', 'text!../../templates/views/registe
             'click #btn-click' : 'getRegistrationForm'
         },
         initialize: function () {
-            host = 'http://10.22.19.208:8000/';
+            host = 'http://server.interiit.com/';
             this.render();
         },
         render: function () {
