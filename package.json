@@ -1,17 +1,40 @@
 {
-  "name": "interiit_frontend",
+  "name": "Inter-IIT-Frontend",
   "version": "1.0.0",
-  "description": "InterIIT Frontend",
-  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server",
+    "build": "webpack"
   },
-  "author": "IIT Madras",
-  "license": "ISC",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/angular/angular.io/blob/master/LICENSE"
+    }
+  ],
   "dependencies": {
-    "ejs": "^2.5.7",
-    "express": "^4.15.4",
-    "jquery": "^3.2.1",
-    "text": "git://github.com/requirejs/text"
+    "@angular/common": "~2.1.1",
+    "@angular/compiler": "~2.1.1",
+    "@angular/core": "~2.1.1",
+    "@angular/forms": "~2.1.1",
+    "@angular/http": "~2.1.1",
+    "@angular/platform-browser": "~2.1.1",
+    "@angular/platform-browser-dynamic": "~2.1.1",
+    "@angular/router": "~3.1.1",
+    "@angular/upgrade": "~2.1.1",
+    "angular-in-memory-web-api": "0.1.13",
+    "bootstrap": "^3.3.7",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "5.0.0-beta.12",
+    "systemjs": "0.19.39",
+    "zone.js": "^0.6.25"
+  },
+  "devDependencies": {
+    "@types/core-js": "0.9.34",
+    "@types/node": "6.0.45",
+    "ts-loader": "0.8.2",
+    "typescript": "^2.0.3",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.1"
   }
 }
