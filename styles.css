@@ -12,3 +12,9 @@ h2, h3 {
 body {
   margin: 2em;
 }
+#loader{
+  font-size: 50px;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+}
