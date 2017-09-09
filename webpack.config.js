@@ -11,5 +11,8 @@ module.exports = {
         loaders: [{
             test: /\.ts/, loaders: ['ts-loader'], exclude: /node_modules/
         }]
-    }
+    },
+    devServer: {
+    historyApiFallback: true
+  }
 }
