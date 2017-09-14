@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 
 @Component({
     selector: 'app-home',
-    template:'<h1>Inter IIT Frontend</h1>'
+    templateUrl:'./app/home/home.html'
 })
 
 export class HomeComponent{

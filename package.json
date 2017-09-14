@@ -2,7 +2,7 @@
   "name": "Inter-IIT-Frontend",
   "version": "1.0.0",
   "scripts": {
-    "start": "webpack-dev-server --inline --progress --port 8080",
+    "start": "webpack-dev-server --inline --progress --port 8080 --host 0.0.0.0 --public 10.22.19.240",
     "build": "webpack"
   },
   "licenses": [

@@ -8,6 +8,7 @@ import {UpdateComponent} from './update/update.component';
 //import {SportsComponent} from './sports/sports.component';
 
 import {UpdateService} from './update/update.service';
+import {NotExistComponent} from './not_exist/not_exist.component';
 
 import {routerModule} from './app.routes'
 
@@ -20,8 +21,9 @@ import {routerModule} from './app.routes'
      AppComponent,
      ContactUsComponent,
      HomeComponent,
-     UpdateComponent
+     UpdateComponent,
      //SportsComponent
+     NotExistComponent
       ],
   providers:[
      UpdateService
