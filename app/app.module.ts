@@ -4,6 +4,10 @@ import { AppComponent }   from './app.component';
 
 import {ContactUsComponent} from './contactus/contactus.component';
 import {HomeComponent} from './home/home.component';
+import {UpdateComponent} from './update/update.component';
+//import {SportsComponent} from './sports/sports.component';
+
+import {UpdateService} from './update/update.service';
 
 import {routerModule} from './app.routes'
 
@@ -15,8 +19,13 @@ import {routerModule} from './app.routes'
   declarations: [
      AppComponent,
      ContactUsComponent,
-     HomeComponent
+     HomeComponent,
+     UpdateComponent
+     //SportsComponent
       ],
+  providers:[
+     UpdateService
+  ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
