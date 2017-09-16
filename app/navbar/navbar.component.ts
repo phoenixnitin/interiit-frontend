@@ -7,11 +7,18 @@ import { Component } from '@angular/core';
 })
 
 export class NavbarComponent {
+    Width; 
+    Height;
     days;
     hours;
     minutes;
     seconds;
     countDownDate = new Date("Oct 1, 2017 00:00:00").getTime();
+
+    constructor(){
+        this.Width = window.screen.width;
+        this.Height = window.screen.height;
+    }
 
 // Update the count down every 1 second
     x = setInterval(() => {
@@ -41,4 +48,3 @@ export class NavbarComponent {
 
 
 }
-
