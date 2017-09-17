@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default" [style.width.px]="Width" >
+<!--<nav class="navbar navbar-default" [style.width.px]="Width" >
   <div class="container-fluid">
       <ul class="nav navbar-nav">
           <li><div id="menuToggle">
@@ -8,21 +8,65 @@
     <span></span>
     <span></span>
     <ul id="menu" class="menu-size" [style.height.px]="Height" >
-      <a href="#"><li class="col-lg-3 col-sm-6 col-xs-12 sidebar-item">Home</li></a>
-      <a href="#"><li class="col-lg-3 col-sm-6 col-xs-12 sidebar-item">Sports</li></a>
-      <a href="#"><li class="col-lg-3 col-sm-6 col-xs-12 sidebar-item">Gallery</li></a>
-      <a href="#"><li class="col-lg-3 col-sm-6 col-xs-12 sidebar-item">Sponsorship</li></a>
-      <a href="#"><li class="col-lg-3 col-sm-6 col-xs-12 sidebar-item">Statistics</li></a>
-      <a href="#"><li class="col-lg-3 col-sm-6 col-xs-12 sidebar-item">Contacts</li></a>
-      <a href="#"><li class="col-lg-3 col-sm-6 col-xs-12 sidebar-item">Map</li></a>
+      <a href="#"><li ><div class="sidebar-item">Home</div></li></a>
+      <a href="#"><li class="sidebar-item">Sports</li></a>
+      <a href="#"><li class="sidebar-item">Gallery</li></a>
+      <a href="#"><li class="sidebar-item">Sponsorship</li></a>
+      <a href="#"><li class="sidebar-item">Statistics</li></a>
+      <a href="#"><li class="sidebar-item">Contacts</li></a>
+      <a href="#"><li class="sidebar-item">Map</li></a>
     </ul>
   </div></li>
       <li id='countdown' >
-        <span class="number">{{days}} Days</span> --> 
-        <span class="number">{{hours}} Hours</span> --> 
-        <span class="number">{{minutes}} Minutes</span> --> 
+        <span class="number">{{days}} Days</span> 
+        <span class="number">{{hours}} Hours</span>  
+        <span class="number">{{minutes}} Minutes</span>  
         <span class="number">{{seconds}} Seconds</span> 
       </li>
     </ul>
   </div>
-</nav>
+</nav>-->
+
+<!--Desktop Navigation-->
+  <span class="desktop">
+    <header>
+      <span id="logo">52ND INTER IIT AQUATICS MEET</span>
+      <nav>
+        <a [routerLink]="['/home']">Home</a>
+        <a [routerLink]="['/sports']">Sports</a>
+        <a href="#">Gallery</a>
+        <a href="#">Sponsorship</a>
+        <a href="#">Statistics</a>
+        <a [routerLink]="['/contactus']">Contacts</a>
+        <a href="#">Maps</a>
+
+      </nav>
+    </header>
+  </span>
+
+  <!--Mobile Navigation-->
+  <span class="mobile">
+    <header>
+      <span id="logo">Inter IIT Sports Meet</span>
+      <div class="button_container">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </div>
+    </header>
+
+    <div class="overlay">
+      <nav>
+        <ul>
+         <li> <a href="#">Home</a></li>
+        <li><a href="#">Sports</a></li>
+        <li><a href="#">Gallery</a></li>
+       <li> <a href="#">Sponsorship</a></li>
+        <li><a href="#">Statistics</a></li>
+       <li> <a href="#">Contacts</a></li>
+       <li> <a href="#">Maps</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </span>

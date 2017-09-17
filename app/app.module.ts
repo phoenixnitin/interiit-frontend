@@ -6,23 +6,25 @@ import {ContactUsComponent} from './contactus/contactus.component';
 import {NavbarComponent} from './navbar/navbar.component'
 import {HomeComponent} from './home/home.component';
 import {UpdateComponent} from './update/update.component';
-//import {SportsComponent} from './sports/sports.component';
+import {SportsComponent} from './sports/sports.component';
 import {UpdateService} from './update/update.service';
 import {NotExistComponent} from './not_exist/not_exist.component';
 
-import {routerModule} from './app.routes'
+import {routerModule} from './app.routes';
+
 
 @NgModule({
   imports:      [
      BrowserModule,
-     routerModule
+     routerModule,
+     
       ],
   declarations: [
      AppComponent,
      ContactUsComponent,
      HomeComponent,
      UpdateComponent,
-     //SportsComponent,
+     SportsComponent,
      NavbarComponent,
      NotExistComponent
       ],
@@ -31,4 +33,6 @@ import {routerModule} from './app.routes'
   ],
   bootstrap:    [ AppComponent ]
 })
-export class AppModule { }
+export class AppModule { 
+
+}

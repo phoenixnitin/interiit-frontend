@@ -10,9 +10,48 @@ h2, h3 {
   font-weight: lighter;
 }
 
-#loader{
-  font-size: 50px;
+.loading {
+  background: rgba(16, 17, 24, 1);
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
   position: absolute;
-  top: 40%;
-  left: 35%;
+  text-align: center;
+  z-index: 1001;
+}
+
+.svg-wrapper {
+  height: 350px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 150px;
+}
+
+.animate {
+  fill: transparent;
+  stroke-dasharray: 300;
+  stroke-dashoffset: 600;
+  stroke-width: 1px;
+  stroke: #fdad59;
+}
+
+.text {
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  top: -130px;
+}
+
+.logo {
+  display: block;
+  letter-spacing: 7px;
+  font-size: 18px;
+  /*width: */
+  padding-bottom: 5px;
+  font-family: 'Cinzel';
+}
+body {
+  background-color: black;
 }
