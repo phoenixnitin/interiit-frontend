@@ -9,6 +9,7 @@ import {UpdateComponent} from './update/update.component';
 import {SportsComponent} from './sports/sports.component';
 import {UpdateService} from './update/update.service';
 import {NotExistComponent} from './not_exist/not_exist.component';
+import {SportsAquaticsComponent} from './sports/aquatics/aquatics.component'
 
 import {routerModule} from './app.routes';
 
@@ -26,7 +27,8 @@ import {routerModule} from './app.routes';
      UpdateComponent,
      SportsComponent,
      NavbarComponent,
-     NotExistComponent
+     NotExistComponent,
+     SportsAquaticsComponent
       ],
   providers:[
      UpdateService

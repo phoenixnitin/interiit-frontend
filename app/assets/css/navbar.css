@@ -16,7 +16,7 @@
   }
   header #logo {
     float: left;
-    margin-left: 5%;
+    /*margin-left: 5%;*/
     font-family: 'Open Sans';
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -26,7 +26,8 @@
   }
   header nav {
     float: right;
-    margin-right: 5%;
+    /*margin-right: 5%;*/
+    text-align: end;
   }
   header nav a {
     position: relative;
@@ -35,7 +36,7 @@
     font-weight: 300;
     font-family: 'Lato', serif, sans-serif;
     text-decoration: none;
-    margin-left: 50px;
+    margin-left: 22px;
     border-bottom: 2px solid rgba(255, 255, 255, 0);
     transition: color .25s ease;
   }
@@ -118,7 +119,7 @@
     background: #fdad59;
     transition: all .35s ease;
   }
-  
+
   .top {
     top: 0px;
   }
@@ -251,7 +252,7 @@
   body {
     height: 3000px;
   }
-  
+
 }
 
 
