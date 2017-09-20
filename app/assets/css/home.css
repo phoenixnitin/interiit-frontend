@@ -104,21 +104,31 @@
 }
 
 .content-1.loaded {
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 490px){
+    .one,
+.two,
+.three {
+       font-size: 65%;
+    }
 }
 
 .one,
 .two,
 .three {
   color: white;
-  font-size: 30px;
   position: absolute;
-  text-align: center;
+  /*text-align: center;*/
   top: 100%;
-  left: 50%;
+  /*left: 50%;*/
   transform: translateX(-50%);
   transition: all .75s ease;
   font-family: 'Cinzel';
+  width:fit-content;
 }
 
 .mouseScroll {
@@ -253,8 +263,20 @@
 .cube {
   text-align: center;
   margin: 0 auto;
-    line-height: 2;
-    min-width: 410px;
+  line-height: 2;
+
+}
+
+@media screen and (min-width: 420px){
+    .cube{
+        min-width: 410px;
+    }
+}
+@media screen and (max-width: 419px){
+    .default-state,
+    .active-state {
+      font-size: 85% !important;
+    }
 }
 
 .default-state,
