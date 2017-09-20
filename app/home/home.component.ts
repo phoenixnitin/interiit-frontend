@@ -1,4 +1,5 @@
 import {Component,ViewChild,ElementRef,animate,style} from '@angular/core';
+import * as jQuery from 'jquery';
 
 @Component({
     selector: 'app-home',
@@ -49,6 +50,12 @@ delay = 650;
                         setInterval(animation, this.delay * 18);
             },900);
     };
+
+mouseclick() {
+    jQuery('html, body').animate({
+      scrollTop: jQuery(".about").offset().top - 150
+    }, 800);
+  };
 
     // scroll(){
     //         console.log('Hey!! You Scrolled!!');

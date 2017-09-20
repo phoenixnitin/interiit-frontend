@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as jQuery from 'jquery';
 
 @Component({
   selector: 'navbar',
@@ -46,5 +47,10 @@ export class NavbarComponent {
     }
 }, 1000);
 
+    toggleMenu() {
+      jQuery('.button_container').toggleClass('active');
+      jQuery('.overlay').toggleClass('open');
+      jQuery('body').toggleClass('active');
+    };
 
 }

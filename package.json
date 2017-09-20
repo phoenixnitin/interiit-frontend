@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@types/core-js": "0.9.34",
-    "@types/jquery": "^3.2.12",
+    "@types/jquery": "git://github.com/magnitronus/types-jquery.git",
     "@types/node": "6.0.45",
     "ts-loader": "0.8.2",
     "typescript": "^2.0.3",

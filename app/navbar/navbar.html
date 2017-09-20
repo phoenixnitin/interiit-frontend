@@ -39,7 +39,6 @@
         <a [routerLink]="['/statistics']">Statistics</a>
         <a [routerLink]="['/contactus']">Contacts</a>
         <a [routerLink]="['/maps']">Maps</a>
-
       </nav>
     </header>
   </span>
@@ -48,25 +47,24 @@
   <span class="mobile">
     <header>
       <span id="logo">52ND Inter IIT Sports Meet</span>
-      <div class="button_container">
+      <div id="menuButton" (click)="toggleMenu()" class="button_container">
         <span class="top"></span>
         <span class="middle"></span>
         <span class="bottom"></span>
       </div>
     </header>
 
-    <div class="overlay">
+    <div id="menuOverlay" class="overlay">
       <nav>
-        <ul>
-         <li> <a href="#">Home</a></li>
-        <li><a href="#">Sports</a></li>
-        <li><a href="#">Gallery</a></li>
-       <li> <a href="#">Sponsorship</a></li>
-        <li><a href="#">Statistics</a></li>
-       <li> <a href="#">Contacts</a></li>
-       <li> <a href="#">Maps</a></li>
-
-        </ul>
+      <ul>
+        <li (click)="toggleMenu()"><a [routerLink]="['/home']">Home</a></li>
+        <li (click)="toggleMenu()"><a [routerLink]="['/sports']">Sports</a></li>
+        <li (click)="toggleMenu()"><a [routerLink]="['/gallery']">Gallery</a>
+        <li (click)="toggleMenu()"><a [routerLink]="['/sponsorship']">Sponsorship</a></li>
+        <li (click)="toggleMenu()"><a [routerLink]="['/statistics']">Statistics</a></li>
+        <li (click)="toggleMenu()"><a [routerLink]="['/contactus']">Contacts</a></li>
+        <li (click)="toggleMenu()"><a [routerLink]="['/maps']">Maps</a></li>
+      </ul>
       </nav>
     </div>
   </span>
