@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import * as jQuery from 'jquery';
 
 @Component({
   selector: 'navbar',
