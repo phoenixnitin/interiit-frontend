@@ -11,7 +11,7 @@ const APP_ROUTES: Routes = [
     // {path: 'contactus', component: ContactUsComponent},
     {path: 'home', component: HomeComponent},
     {path: 'sports', component: SportsComponent},
-    {path: 'sport/aquatics', component: SportsAquaticsComponent},
+    {path: 'sports-aquatics', component: SportsAquaticsComponent},
     {path: '**', component: NotExistComponent}
 ];
 
