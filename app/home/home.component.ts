@@ -1,5 +1,6 @@
 import {Component,ViewChild,ElementRef,animate,style} from '@angular/core';
 import * as jQuery from 'jquery';
+import {stringify} from "querystring";
 
 @Component({
     selector: 'app-home',
@@ -57,16 +58,43 @@ mouseclick() {
     }, 800);
   };
 
-    // scroll(){
-    //         console.log('Hey!! You Scrolled!!');
-    //         //console.log(this._el.nativeElement.querySelectorAll('.hideme'));
-    //         this._el.nativeElement.querySelectorAll('.hideme').forEach( item => {
+    days;
+    hours;
+    minutes;
+    seconds;
+    countDownDate = new Date("Oct 1, 2017 00:00:00").getTime();
 
-    //         var bottom_of_object = item.offset().top + item.outerHeight();
-    //         var bottom_of_window = this.parent.nativeElement.scrollTop() + this.parent.nativeElement.height();
-    //         if (bottom_of_window > bottom_of_object) {
-    //             item.animate('1.25s', style({ opacity: 1 }));
-    //         }
-    //        });
-    // };
+// Update the count down every 1 second
+    x = setInterval(() => {
+
+    // Get todays date and time
+    let now = new Date().getTime();
+
+    // Find the distance between now an the count down date
+    let distance = this.countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+
+    this.days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    this.hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    this.minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    this.seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    if(this.days < 10)
+        this.days = "0"+String(this.days);
+    if(this.hours < 10)
+        this.hours = "0"+String(this.hours);
+    if(this.minutes < 10)
+        this.minutes = "0"+String(this.minutes);
+    if(this.seconds < 10)
+        this.seconds = "0"+String(this.seconds);
+    // Output the result in an element with id="countdown"
+
+
+    // If the count down is over, write some text
+    if (distance < 0) {
+        clearInterval(this.x);
+        document.getElementById("countdown").innerHTML = "EXPIRED";
+    }
+}, 1000);
 }

@@ -355,3 +355,47 @@
   background: rgb(31, 32, 39);
   color: #fdad59;
 }
+
+
+.aquatics-text{
+    text-align: center;
+    position: relative;
+    top: -265px;
+}
+.aquatics-text h1{
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px #111;
+}
+#countdown{
+    font-size: 250%;
+    color: #fdad59;
+}
+#countdown .number{
+    color: black;
+    border: 1px solid #ffffff;
+    padding: 3px;
+    border-radius: 5px;
+    background: whitesmoke;
+    text-shadow: 1px 1px #888888;
+    box-shadow: 3px 3px 3px #111;
+}
+
+.smallScreen{
+    display: none;
+    visibility: hidden;
+}
+@media screen and (max-width:780px){
+    .largeScreen{
+        display: none;
+        visibility: hidden;
+    }
+    .smallScreen{
+        display: inline;
+        visibility: visible;
+    }
+}
+@media screen and (max-width: 780px){
+    .aquatics-text{
+        font-size: 80%;
+    }
+}
