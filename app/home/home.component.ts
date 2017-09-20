@@ -1,6 +1,5 @@
 import {Component,ViewChild,ElementRef,animate,style} from '@angular/core';
 import * as jQuery from 'jquery';
-import {stringify} from "querystring";
 
 @Component({
     selector: 'app-home',
