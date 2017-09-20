@@ -1,17 +1,115 @@
-.wrapper {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  z-index: -10;
-}
-.wrapper .landing {
-  width: 100%;
-  height: 100%;
-  transform: scale(1.25);
-  background-image: linear-gradient(rgba(21, 22, 29, 0.9), rgba(21, 22, 29, 0.9)), url(app/assets/back.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  transition: all 1.5s ease;
-}
+ h2{
+   color: white;
+   font-family: arial;
+   position: absolute;
+   top: 23vh;
+   left: 35vw;
+ }
+ .myButton {
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    font: normal 16px/normal "Comic Sans MS", cursive, sans-serif;
+    color: rgba(255,255,255,0.9);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: #1880a5;
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+    text-shadow: -1px -1px 0 rgba(15,73,168,0.66) ;
+    -webkit-transition: all 300ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    -moz-transition: all 300ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    -o-transition: all 300ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: all 300ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+.CardBox{
+    display: table-cell;
+    width: 250px; 
+    transition: all .2s;
+    box-sizing: border-box;
+    padding-right: 100px;
+    position: relative;
+    top: 40vh;
+    left: 8vw;
+       }
+.CardBox:hover {      
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);    
+    }
+.bottomPart{
+    background-color: #2C2C2B; 
+    padding:10px; 
+    margin-top: -15px; 
+    text-align:center;
+    }
+#text-container{
+    color:white !important; 
+    font-weight: normal; 
+    font-family: courier new;
+    }
+#button-coantiner{
+    color:white; 
+    padding-top:10px;
+    } h2{
+   color: white;
+   font-family: arial;
+   position: absolute;
+   top: 23vh;
+   left: 35vw;
+ }
+ .myButton {
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    font: normal 16px/normal "Comic Sans MS", cursive, sans-serif;
+    color: rgba(255,255,255,0.9);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: #1880a5;
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+    text-shadow: -1px -1px 0 rgba(15,73,168,0.66) ;
+    -webkit-transition: all 300ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    -moz-transition: all 300ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    -o-transition: all 300ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: all 300ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+.CardBox{
+    display: table-cell;
+    width: 250px; 
+    transition: all .2s;
+    box-sizing: border-box;
+    padding-right: 100px;
+    position: relative;
+    top: 40vh;
+    left: 8vw;
+       }
+.CardBox:hover {      
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);    
+    }
+.bottomPart{
+    background-color: #2C2C2B; 
+    padding:10px; 
+    margin-top: -15px; 
+    text-align:center;
+    }
+#text-container{
+    color:white !important; 
+    font-weight: normal; 
+    font-family: courier new;
+    }
+#button-coantiner{
+    color:white; 
+    padding-top:10px;
+    }
