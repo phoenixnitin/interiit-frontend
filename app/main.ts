@@ -6,4 +6,3 @@ enableProdMode();
 
 const platform = platformBrowserDynamic();
 platform.bootstrapModule(AppModule);
-git 
