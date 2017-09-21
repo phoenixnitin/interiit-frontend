@@ -12,7 +12,7 @@ import {GALLERY_ROUTES} from './gallery/gallery.routes';
 
 const APP_ROUTES: Routes = [
     {path: '', redirectTo: '/home', pathMatch: 'full'},
-    // {path: 'contactus', component: ContactUsComponent},
+    {path: 'contactus', component: ContactUsComponent},
     {path: 'home', component: HomeComponent},
     {path: 'sports', component: SportsComponent},
     {path: 'sports-aquatics', component: SportsAquaticsComponent},

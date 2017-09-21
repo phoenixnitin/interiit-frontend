@@ -22,7 +22,7 @@ import {routerModule} from './app.routes';
   imports:      [
      BrowserModule,
      routerModule,
-     
+     HttpModule
       ],
   declarations: [
      AppComponent,
