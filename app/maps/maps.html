@@ -1,0 +1,15 @@
+<script type="text/javascript" src="../node_modules/angular/angular.js"></script>
+<script type="text/javascript" src="../node_modules/ngmap/ng-map.js"></script>
+<script type="text/javascript" src="pages/maps.js"></script>
+<script src="https://maps.google.com/maps/api/js?libraries=placeses,visualization,drawing,geometry,places"></script>	
+<div class="body" #parent>
+      <!--Homepage-->
+  <div class="container col-xs-12">
+  </div>
+  <div class="wrapper">
+  <div class="landing"></div>
+  </div>
+</div>	
+<div ng-app="InstiMap" ng-controller="InstiMapController">
+  <ng-map center="[12.9952, 80.2380]" style="height:100px !important;"></ng-map>
+</div>

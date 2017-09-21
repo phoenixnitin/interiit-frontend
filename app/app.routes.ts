@@ -5,6 +5,7 @@ import {HomeComponent} from './home/home.component';
 import {SportsComponent} from './sports/sports.component';
 import {SportsAquaticsComponent} from './sports/aquatics/aquatics.component';
 import {NotExistComponent} from './not_exist/not_exist.component';
+import {MapsComponent} from './maps/maps.component';
 
 const APP_ROUTES: Routes = [
     {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -12,6 +13,7 @@ const APP_ROUTES: Routes = [
     {path: 'home', component: HomeComponent},
     {path: 'sports', component: SportsComponent},
     {path: 'sports-aquatics', component: SportsAquaticsComponent},
+    {path:'maps',component:MapsComponent},
     {path: '**', component: NotExistComponent}
 ];
 
