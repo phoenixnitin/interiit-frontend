@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 @Component({
     selector: 'gallery-image',
     templateUrl: './app/gallery/ImageGallery/image.gallery.html',
-    styleUrls: ['./app/assets/css/imagegallery.css','./app/assets/css/fancybox.css']
+    styleUrls: ['./app/assets/css/imagegallery.css']
 })
 
 export class ImageGalleryComponent{
