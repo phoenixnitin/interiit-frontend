@@ -1,0 +1,18 @@
+.container header{
+    background: #333333;
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.container section{
+    background: #D2D2D2;
+    overflow: hidden;
+    position: relative;
+    top: 0px;
+    margin-top: -10px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.container section img{
+    margin: 5px;
+}
