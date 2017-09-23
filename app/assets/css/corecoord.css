@@ -52,7 +52,7 @@ body:before {
     }
     .square-flip{
       width:300px;
-      height:300px;
+      height:450px;
     }
     .square,.square2{
       width:100%;
@@ -155,6 +155,10 @@ body:before {
 
     }
 
+    .square-container2 p{
+        font-size: 17px !important;
+    }
+
     .square-container2{
       padding:40px;
       text-align:center;
@@ -200,7 +204,7 @@ body:before {
     /*Elements*/
     .flip-overlay{
       display:block;
-      background:rgba(0,0,0,0.5);
+      background:rgba(0,0,0,0.2);
       width:100%;
       height:100%;
       position:absolute;
