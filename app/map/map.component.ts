@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit, OnDestroy} from '@angular/core';
 
 declare var google: any;
 
@@ -8,7 +8,7 @@ declare var google: any;
     styleUrls: ['./app/assets/css/map.css']
 })
 
-export class MapComponent{
+export class MapComponent implements OnInit, OnDestroy{
   ngOnInit(){
            function initMap() {
         var markerObjects = [];
@@ -934,7 +934,7 @@ export class MapComponent{
         // to the map type control.
         var map = new google.maps.Map(document.getElementById('map'), {
           center: new google.maps.LatLng(markers[0].lat, markers[0].lng),
-          zoom: 18,
+          zoom: 16,
           mapTypeControlOptions: {
             mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
                     'styled_map']
@@ -969,7 +969,7 @@ export class MapComponent{
 
       // click listener on a marker itself
       google.maps.event.addListener(markerObjects[markerIndex], 'click', () =>  {
-        var marker = this;
+        //var marker = this;
         if (marker.getAnimation() != null) {
           marker.setAnimation(null);
         } else {
@@ -978,7 +978,7 @@ export class MapComponent{
       });
 
       // create a row in the overlay table and bind onhover
-      var $row = $('<div>')
+      let row = jQuery('<div>')
         .addClass('list-group-item')
         .html(data.title)
         .on('mouseenter', () =>  {
@@ -991,7 +991,26 @@ export class MapComponent{
             marker.setAnimation(null);
           }
         });
-      
+
+      let cp_div = jQuery('<a href="#" class="btn small pull-right colpick">#' + defaultMarkerColor + '</a>');
+      cp_div.colorpicker().on('changeColor', function(ev) {
+        var color = ev.color.toHex();
+
+        jQuery(this).text(color);
+
+        if (color.substring(0, 1) == '#') {
+          color = color.substring(1);
+        }
+        var marker = markerObjects[markerIndex];
+        marker.setIcon("https://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|" + color);
+
+        console.log('changed color to ' + color);
+
+      });
+      cp_div.appendTo(row);
+
+      row.appendTo('#overlay');
+
       i++;
       
       if (i == markers.length) {
@@ -999,8 +1018,11 @@ export class MapComponent{
       }
     }, 200);
 
-        google.maps.event.addDomListener(window, 'load', initMap);
+        // google.maps.event.addDomListener(window, 'load', initMap);
       }
       initMap();
+  }
+  ngOnDestroy(){
+      jQuery('div.colorpicker.dropdown-menu.colorpicker-hidden').remove();
   }
 }
