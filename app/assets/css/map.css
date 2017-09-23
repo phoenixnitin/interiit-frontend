@@ -1,0 +1,24 @@
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+        position: relative;
+        top: 100px;
+      }
+      
+       #overlay {
+        display: block;
+        position: absolute;
+        background-color:  black;
+        color: black;
+        top: 5px;
+        left: 5px;
+        height: 400px;
+        width: 350px;
+        overflow: auto;
+       }
+
+        .list-group-item{
+        background-color: black;
+        color: white;
+        }

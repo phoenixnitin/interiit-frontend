@@ -1,0 +1,213 @@
+<div class="container">
+<div class="centerflipcards">
+
+  <div class="row">
+            <!-- For Each Department------WebOps-->
+  <h2>WebOps & MobOps</h2>  
+	<div class="square-flip" *ngFor="let coord of WebOps">
+		<div class='square' [ngStyle]="{'background-image': 'url('+image_url+coord.PhotoID+')'}">
+			<div class="square-container">
+				
+				<h2 class="textshadow">{{coord.Name}}</h2>
+				<h3 class="textshadow">{{coord.Position}}</h3>
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+		<div class='square2' style="background-image: url('./app/assets/contactme1.jpg')">
+			<div class="square-container2">
+				<div class="align-center"></div>
+				<h2>Contact Number: {{coord.MobileNo}} <br> Email Id: {{coord.Email}}</h2>
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+	</div>
+  </div>
+        
+  <div class="row">
+        <!-- Spons -->
+    <h2>Spons</h2>  
+	<div class="square-flip" *ngFor="let coord of Spons">
+		<div class='square' [ngStyle]="{'background-image': 'url('+image_url+coord.PhotoID+')'}">
+			<div class="square-container">
+				
+				<h2 class="textshadow">{{coord.Name}}</h2>
+				<h3 class="textshadow">{{coord.Position}}</h3>
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+		<div class='square2' style="background-image: url('./app/assets/contactme1.jpg')">
+			<div class="square-container2">
+				<div class="align-center"></div>
+				<h2>Contact Number: {{coord.MobileNo}} <br> Email Id: {{coord.Email}}</h2>
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+	</div>
+
+  </div>
+
+  <div class="row">
+            <!-- Design -->
+    <h2>Design</h2>  
+	<div class="square-flip" *ngFor="let coord of Design">
+		<div class='square' [ngStyle]="{'background-image': 'url('+image_url+coord.PhotoID+')'}">
+			<div class="square-container">
+				
+				<h2 class="textshadow">{{coord.Name}}</h2>
+				<h3 class="textshadow">{{coord.Position}}</h3>
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+		<div class='square2' style="background-image: url('./app/assets/contactme1.jpg')">
+			<div class="square-container2">
+				<div class="align-center"></div>
+				<h2>Contact Number: {{coord.MobileNo}} <br> Email Id: {{coord.Email}}</h2>
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+	</div>
+  </div>
+
+  <div class="row">
+            <!-- Facilities -->
+    <h2>Facilities & Requirements</h2>  
+	<div class="square-flip" *ngFor="let coord of Facilities">
+		<div class='square' [ngStyle]="{'background-image': 'url('+image_url+coord.PhotoID+')'}">
+			<div class="square-container">
+				
+				<h2 class="textshadow">{{coord.Name}}</h2>
+				<h3 class="textshadow">{{coord.Position}}</h3>
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+		<div class='square2' style="background-image: url('./app/assets/contactme1.jpg')">
+			<div class="square-container2">
+				<div class="align-center"></div>
+				<h2>Contact Number: {{coord.MobileNo}} <br> Email Id: {{coord.Email}}</h2>
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+	</div>
+  </div>
+
+
+  <div class="row">
+            <!-- Events -->
+    <h2>Events</h2>  
+	<div class="square-flip" *ngFor="let coord of Events">
+		<div class='square' [ngStyle]="{'background-image': 'url('+image_url+coord.PhotoID+')'}">
+			<div class="square-container">
+				
+				<h2 class="textshadow">{{coord.Name}}</h2>
+				<h3 class="textshadow">{{coord.Position}}</h3>
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+		<div class='square2' style="background-image: url('./app/assets/contactme1.jpg')">
+			<div class="square-container2">
+				<div class="align-center"></div>
+				<h2>Contact Number: {{coord.MobileNo}} <br> Email Id: {{coord.Email}}</h2>
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+	</div>
+  </div>
+
+  <div class="row">
+            <!-- Media -->
+    <h2>Media</h2>  
+	<div class="square-flip" *ngFor="let coord of Media">
+		<div class='square' [ngStyle]="{'background-image': 'url('+image_url+coord.PhotoID+')'}">
+			<div class="square-container">
+				
+				<h2 class="textshadow">{{coord.Name}}</h2>
+				<h3 class="textshadow">{{coord.Position}}</h3>
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+		<div class='square2' style="background-image: url('./app/assets/contactme1.jpg')">
+			<div class="square-container2">
+				<div class="align-center"></div>
+				<h2>Contact Number: {{coord.MobileNo}} <br> Email Id: {{coord.Email}}</h2>
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+	</div>
+  </div>
+
+  <div class="row">
+            
+            <!-- Security -->
+    <h2>Security</h2>  
+	<div class="square-flip" *ngFor="let coord of Security">
+		<div class='square' [ngStyle]="{'background-image': 'url('+image_url+coord.PhotoID+')'}">
+			<div class="square-container">
+				
+				<h2 class="textshadow">{{coord.Name}}</h2>
+				<h3 class="textshadow">{{coord.Position}}</h3>
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+		<div class='square2' style="background-image: url('./app/assets/contactme1.jpg')">
+			<div class="square-container2">
+				<div class="align-center"></div>
+				<h2>Contact Number: {{coord.MobileNo}} <br> Email Id: {{coord.Email}}</h2>
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+	</div>
+  </div>
+
+  <div class="row">
+
+            <!-- Hospitality -->
+    <h2>Hospitality</h2>  
+	<div class="square-flip" *ngFor="let coord of Hospitality">
+		<div class='square' [ngStyle]="{'background-image': 'url('+image_url+coord.PhotoID+')'}">
+			<div class="square-container">
+				
+				<h2 class="textshadow">{{coord.Name}}</h2>
+				<h3 class="textshadow">{{coord.Position}}</h3>
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+		<div class='square2' style="background-image: url('./app/assets/contactme1.jpg')">
+			<div class="square-container2">
+				<div class="align-center"></div>
+				<h2>Contact Number: {{coord.MobileNo}} <br> Email Id: {{coord.Email}}</h2>
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+	</div>
+  </div>
+
+  <div class="row">
+            
+            <!-- Finance -->
+    <h2>Finance</h2>  
+	<div class="square-flip" *ngFor="let coord of Finance">
+		<div class='square' [ngStyle]="{'background-image': 'url('+image_url+coord.PhotoID+')'}">
+			<div class="square-container">
+				
+				<h2 class="textshadow">{{coord.Name}}</h2>
+				<h3 class="textshadow">{{coord.Position}}</h3>
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+		<div class='square2' style="background-image: url('./app/assets/contactme1.jpg')">
+			<div class="square-container2">
+				<div class="align-center"></div>
+				<h2>Contact Number: {{coord.MobileNo}} <br> Email Id: {{coord.Email}}</h2>
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+	</div>
+  </div>
+
+
+  <br/>
+  <br/>
+  <br/>
+  
+</div>
+</div>

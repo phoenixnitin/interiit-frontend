@@ -1,61 +1,11 @@
 <div class="container">
-   <div class="centerflipcards">
-	<div class="square-flip">
-		<div class='square' data-image="./app/assets/pic1.jpg">
-			<div class="square-container">
-				
-				<h2 class="textshadow">Kishore Yadav</h2>
-				<h3 class="textshadow">Facilities and Requirements Core</h3>
-			</div>
-			<div class="flip-overlay"></div>
-		</div>
-		<div class='square2' data-image="./app/assets/contactme1.jpg">
-			<div class="square-container2">
-				<div class="align-center"></div>
-				<h2>Contact Number: 99623xxxxx <br> Email Id: xyz@xyz.com</h2>
-			</div>
-			<div class="flip-overlay"></div>
-		</div>
-	</div>
-
-	<div class="square-flip">
-		<div class='square' data-image="./app/assets/pic2.jpg">
-			<div class="square-container">
-				
-				<h2 class="textshadow">Vishnu N</h2>
-				<h3 class="textshadow">Design and Ambience Core</h3>
-			</div>
-			<div class="flip-overlay"></div>
-		</div>
-		<div class='square2' data-image="./app/assets/contactme1.jpg">
-			<div class="square-container2">
-				<div class="align-center"></div>
-				<h2>Contact Number: 99623xxxxx <br> Email Id: xyz@xyz.com</h2>
-			</div>
-			<div class="flip-overlay"></div>
-		</div>
-	</div>
-
-	<div class="square-flip">
-		<div class='square' data-image="./app/assets/pic3.jpg">
-			<div class="square-container">
-				
-				<h2 class="textshadow">Aman Verma</h2>
-				<h3 class="textshadow">Hospitality Core</h3>
-			</div>
-			<div class="flip-overlay"></div>
-		</div>
-		<div class='square2' data-image="./app/assets/contactme1.jpg">
-			<div class="square-container2">
-				<div class="align-center"></div>
-				<h2>Contact Number: 99623xxxxx <br> Email Id: xyz@xyz.com</h2>
-			</div>
-			<div class="flip-overlay"></div>
-		</div>
-	</div>
-  <br/>
-  <br/>
-  <br/>
-  
-  </div>
+<header class="row">
+    <nav class="col-md-8 col-md-offset-5">
+        <ul class="nav nav-pills">
+            <li routerLinkActive="active"><a [routerLink]="['core']" >Cores</a></li>
+            <li routerLinkActive="active"><a [routerLink]="['coord']">Coordinators</a></li>
+        </ul>
+    </nav>
+</header>
+<router-outlet></router-outlet>
 </div>

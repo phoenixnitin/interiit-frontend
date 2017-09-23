@@ -1,0 +1,62 @@
+<div class="container">
+<div class="centerflipcards">
+    
+	<div class="square-flip" *ngFor="let core of cores">
+		<div class='square' [ngStyle]="{'background-image': 'url('+image_url+core.PhotoID+')'}">
+			<div class="square-container">
+				
+				<h2 class="textshadow">{{core.Name}}</h2>
+				<h3 class="textshadow">{{core.Department}}</h3>
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+		<div class='square2' style="background-image: url('./app/assets/contactme1.jpg')">
+			<div class="square-container2">
+				<div class="align-center"></div>
+				<h2>Contact Number: {{core.MobileNo}} <br> Email Id: {{core.Email}}</h2>
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+	</div>
+
+	<!--<div class="square-flip">
+		<div class='square' data-image="./app/assets/pic2.jpg">
+			<div class="square-container">
+				
+				<h2 class="textshadow">Vishnu N</h2>
+				<h3 class="textshadow">Design and Ambience Core</h3>
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+		<div class='square2' data-image="./app/assets/contactme1.jpg">
+			<div class="square-container2">
+				<div class="align-center"></div>
+				<h2>Contact Number: 99623xxxxx <br> Email Id: xyz@xyz.com</h2>
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+	</div>
+
+	<div class="square-flip">
+		<div class='square' data-image="./app/assets/pic3.jpg">
+			<div class="square-container">
+				
+				<h2 class="textshadow">Aman Verma</h2>
+				<h3 class="textshadow">Hospitality Core</h3>
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+		<div class='square2' data-image="./app/assets/contactme1.jpg">
+			<div class="square-container2">
+				<div class="align-center"></div>
+				<h2>Contact Number: 99623xxxxx <br> Email Id: xyz@xyz.com</h2>
+			</div>
+			<div class="flip-overlay"></div>
+		</div>
+	</div>-->
+  <br/>
+  <br/>
+  <br/>
+  
+</div>
+</div>
