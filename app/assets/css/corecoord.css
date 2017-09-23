@@ -287,3 +287,7 @@ body:before {
       font-weight:700;
       text-shadow: 2px 2px 2px #000;
 }
+
+.nav-pills > li > a{
+    cursor: pointer;
+}

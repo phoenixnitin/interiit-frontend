@@ -125,14 +125,14 @@ dept = 'WebOps';
                 this._http.get('https://script.google.com/macros/s/AKfycbygukdW3tt8sCPcFDlkMnMuNu9bH5fpt7bKV50p2bM/exec?id=1WjO92CQ-BLEqGuqZXzSo-wqTx6YE5PZrRpFtSHhxv-c&sheet=Hospitality')
                             .subscribe(res => {
                                 this.Hospitality = res.json().Hospitality;
-                                //console.log(this.Hospitality);
+                                console.log(this.Hospitality);
                             });
 
                 //---------Finance----//
-                this._http.get('https://script.google.com/macros/s/AKfycbygukdW3tt8sCPcFDlkMnMuNu9bH5fpt7bKV50p2bM/exec?id=1WjO92CQ-BLEqGuqZXzSo-wqTx6YE5PZrRpFtSHhxv-c&sheet=WebOps')
+                this._http.get('https://script.google.com/macros/s/AKfycbygukdW3tt8sCPcFDlkMnMuNu9bH5fpt7bKV50p2bM/exec?id=1WjO92CQ-BLEqGuqZXzSo-wqTx6YE5PZrRpFtSHhxv-c&sheet=Finance')
                             .subscribe(res => {
                                 this.Finance = res.json().Finance;
-                                //console.log(this.Finance);
+                                console.log(this.Finance);
                             });
                 
             }
