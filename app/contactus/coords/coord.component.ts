@@ -18,6 +18,35 @@ Security: Array<object>;
 Hospitality: Array<object>;
 Finance: Array<object>;
 image_url="http://www.drive.google.com/uc?export=view&id=";
+dept = 'WebOps';
+
+    webopsclicked(){
+        this.dept = 'WebOps';
+    }
+    financeclicked(){
+        this.dept = 'Finance';
+    }
+    facilitiesclicked(){
+        this.dept = 'Facilities';
+    }
+    hospiclicked(){
+        this.dept = 'Hospitality';
+    }
+    sponsclicked(){
+        this.dept = 'Spons';
+    }
+    securityclicked(){
+        this.dept = 'Security';
+    }
+    eventsclicked(){
+        this.dept = 'Events';
+    }
+    designclicked(){
+        this.dept = 'Design';
+    }
+    mediaclicked(){
+        this.dept = 'Media';
+    }
         constructor(private _http: Http){
 
         }
@@ -100,7 +129,7 @@ image_url="http://www.drive.google.com/uc?export=view&id=";
                             });
 
                 //---------Finance----//
-                this._http.get('https://script.google.com/macros/s/AKfycbygukdW3tt8sCPcFDlkMnMuNu9bH5fpt7bKV50p2bM/exec?id=1WjO92CQ-BLEqGuqZXzSo-wqTx6YE5PZrRpFtSHhxv-c&sheet=Finance')
+                this._http.get('https://script.google.com/macros/s/AKfycbygukdW3tt8sCPcFDlkMnMuNu9bH5fpt7bKV50p2bM/exec?id=1WjO92CQ-BLEqGuqZXzSo-wqTx6YE5PZrRpFtSHhxv-c&sheet=WebOps')
                             .subscribe(res => {
                                 this.Finance = res.json().Finance;
                                 //console.log(this.Finance);
