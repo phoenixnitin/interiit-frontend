@@ -1,5 +1,7 @@
 import {Component} from '@angular/core';
 
+declare var google: any;
+
 @Component({
     selector: 'map',
     templateUrl: './app/map/map.html',
@@ -7,8 +9,8 @@ import {Component} from '@angular/core';
 })
 
 export class MapComponent{
-
-            initMap() {
+  ngOnInit(){
+           function initMap() {
         var markerObjects = [];
         var markers = [{
   "title": 'Cafe Coffee Day',
@@ -945,7 +947,7 @@ export class MapComponent{
 
         // drop markers one by one
     var i = 0;
-    var interval = setInterval(function() {
+    var interval = setInterval(() => {
       var data = markers[i];
       var myLatlng = new google.maps.LatLng(data.lat, data.lng);
 
@@ -966,7 +968,7 @@ export class MapComponent{
       var markerIndex = markerObjects.push(marker) - 1;
 
       // click listener on a marker itself
-      google.maps.event.addListener(markerObjects[markerIndex], 'click', function() {
+      google.maps.event.addListener(markerObjects[markerIndex], 'click', () =>  {
         var marker = this;
         if (marker.getAnimation() != null) {
           marker.setAnimation(null);
@@ -979,45 +981,26 @@ export class MapComponent{
       var $row = $('<div>')
         .addClass('list-group-item')
         .html(data.title)
-        .on('mouseenter', function() {
+        .on('mouseenter', () =>  {
           var marker = markerObjects[markerIndex];
           marker.setAnimation(google.maps.Animation.BOUNCE);
         })
-        .on('mouseleave', function() {
+        .on('mouseleave', () =>  {
           var marker = markerObjects[markerIndex];
           if (marker.getAnimation() != null) {
             marker.setAnimation(null);
           }
         });
-        $cp_div = $('<a href="#" class="btn small pull-right colpick">#' + defaultMarkerColor + '</a>');
-      $cp_div.colorpicker().on('changeColor', function(ev) {
-        var color = ev.color.toHex();
-        
-        $(this).text(color);
-        
-        if (color.substring(0, 1) == '#') {
-          color = color.substring(1);
-        }
-        var marker = markerObjects[markerIndex];
-        marker.setIcon("https://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|" + color);
-
-        console.log('changed color to ' + color);
-
-      });
-      $cp_div.appendTo($row);
-
-      $row.appendTo('#overlay');
-
-        i++;
+      
+      i++;
+      
       if (i == markers.length) {
         clearInterval(interval);
       }
     }, 200);
 
-        google.maps.event.addDomListener(window, 'load', initialize);
+        google.maps.event.addDomListener(window, 'load', initMap);
       }
-      ngOnInit(){
-          this.initMap();
-      }
-
+      initMap();
+  }
 }
