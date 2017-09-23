@@ -130,10 +130,11 @@ body:before {
 
     /*Square content*/
     .square-container{
-      padding:40px;
+      padding:20px;
       text-align:center;
       position:relative;
       top:80%;
+      text-shadow: 2px 2px 2px #000;
 
       -ms-transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
           transition: transform 0.60s cubic-bezier(.5,.3,.3,1);
@@ -155,12 +156,8 @@ body:before {
 
     }
 
-    .square-container2 p{
-        font-size: 17px !important;
-    }
-
     .square-container2{
-      padding:40px;
+      padding:15px;
       text-align:center;
       position:relative;
       top:50%;
@@ -285,7 +282,8 @@ body:before {
 .clearfix{clear:both;}
 .centerflipcards p{
       font-family:"Open Sans";
-      font-size:13px;
+      font-size:17px;
       margin-top:10px;
       font-weight:700;
+      text-shadow: 2px 2px 2px #000;
 }
