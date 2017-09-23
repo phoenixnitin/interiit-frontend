@@ -1,7 +1,25 @@
 <div class="container">
+	<header class="row" style="margin-top: 10px;">
+    	<nav class="col-md-12 col-md-offset-2">
+        	<ul class="nav nav-pills">
+            	<li [class.active]="dept == 'WebOps'"><a (click)="webopsclicked()">WebOps</a></li>
+            	<li [class.active]="dept == 'Spons'"><a (click)="sponsclicked()">Spons</a></li>
+            	<li [class.active]="dept == 'Design'"><a (click)="designclicked()">Design</a></li>
+            	<li [class.active]="dept == 'Media'"><a (click)="mediaclicked()">Media</a></li>
+            	<li [class.active]="dept == 'Facilities'"><a (click)="facilitiesclicked()">Facilities</a></li>
+            	<li [class.active]="dept == 'Finance'"><a (click)="financeclicked()">Finance</a></li>
+            	<li [class.active]="dept == 'Events'"><a (click)="eventsclicked()">Events</a></li>
+            	<li [class.active]="dept == 'Security'"><a (click)="securityclicked()">Security</a></li>
+            	<li [class.active]="dept == 'Hospitality'"><a (click)="hospiclicked()">Hospitality</a></li>
+        	</ul>
+    	</nav>
+	</header>
+
+<!--  [ngStyle]="{'background-image': 'url('+image_url+coord.PhotoID+')'}" -->
+
 <div class="centerflipcards">
 
-  <div class="row">
+  <div class="row" *ngIf="dept == 'WebOps'">
             <!-- For Each Department------WebOps-->
   <h2>WebOps & MobOps</h2>  
 	<div class="square-flip" *ngFor="let coord of WebOps">
@@ -16,14 +34,14 @@
 		<div class='square2' style="background-image: url('./app/assets/contactme1.jpg')">
 			<div class="square-container2">
 				<div class="align-center"></div>
-				<p>Contact Number: {{coord.MobileNo}} <br> Email Id: {{coord.Email}}</p>
+				<h2>Contact Number: {{coord.MobileNo}} <br> Email Id: {{coord.Email}}</h2>
 			</div>
 			<div class="flip-overlay"></div>
 		</div>
 	</div>
   </div>
         
-  <div class="row">
+  <div class="row" *ngIf="dept == 'Spons'">
         <!-- Spons -->
     <h2>Spons</h2>  
 	<div class="square-flip" *ngFor="let coord of Spons">
@@ -38,7 +56,7 @@
 		<div class='square2' style="background-image: url('./app/assets/contactme1.jpg')">
 			<div class="square-container2">
 				<div class="align-center"></div>
-				<p>Contact Number: {{coord.MobileNo}} <br> Email Id: {{coord.Email}}</p>
+				<h2>Contact Number: {{coord.MobileNo}} <br> Email Id: {{coord.Email}}</h2>
 			</div>
 			<div class="flip-overlay"></div>
 		</div>
@@ -46,7 +64,7 @@
 
   </div>
 
-  <div class="row">
+  <div class="row" *ngIf="dept == 'Design'">
             <!-- Design -->
     <h2>Design</h2>  
 	<div class="square-flip" *ngFor="let coord of Design">
@@ -61,14 +79,14 @@
 		<div class='square2' style="background-image: url('./app/assets/contactme1.jpg')">
 			<div class="square-container2">
 				<div class="align-center"></div>
-				<p>Contact Number: {{coord.MobileNo}} <br> Email Id: {{coord.Email}}</p>
+				<h2>Contact Number: {{coord.MobileNo}} <br> Email Id: {{coord.Email}}</h2>
 			</div>
 			<div class="flip-overlay"></div>
 		</div>
 	</div>
   </div>
 
-  <div class="row">
+  <div class="row" *ngIf="dept == 'Facilities'">
             <!-- Facilities -->
     <h2>Facilities & Requirements</h2>  
 	<div class="square-flip" *ngFor="let coord of Facilities">
@@ -83,7 +101,7 @@
 		<div class='square2' style="background-image: url('./app/assets/contactme1.jpg')">
 			<div class="square-container2">
 				<div class="align-center"></div>
-				<p>Contact Number: {{coord.MobileNo}} <br> Email Id: {{coord.Email}}</p>
+				<h2>Contact Number: {{coord.MobileNo}} <br> Email Id: {{coord.Email}}</h2>
 			</div>
 			<div class="flip-overlay"></div>
 		</div>
@@ -91,7 +109,7 @@
   </div>
 
 
-  <div class="row">
+  <div class="row" *ngIf="dept == 'Events'">
             <!-- Events -->
     <h2>Events</h2>  
 	<div class="square-flip" *ngFor="let coord of Events">
@@ -106,14 +124,14 @@
 		<div class='square2' style="background-image: url('./app/assets/contactme1.jpg')">
 			<div class="square-container2">
 				<div class="align-center"></div>
-				<p>Contact Number: {{coord.MobileNo}} <br> Email Id: {{coord.Email}}</p>
+				<h2>Contact Number: {{coord.MobileNo}} <br> Email Id: {{coord.Email}}</h2>
 			</div>
 			<div class="flip-overlay"></div>
 		</div>
 	</div>
   </div>
 
-  <div class="row">
+  <div class="row" *ngIf="dept == 'Media'">
             <!-- Media -->
     <h2>Media</h2>  
 	<div class="square-flip" *ngFor="let coord of Media">
@@ -128,14 +146,14 @@
 		<div class='square2' style="background-image: url('./app/assets/contactme1.jpg')">
 			<div class="square-container2">
 				<div class="align-center"></div>
-				<p>Contact Number: {{coord.MobileNo}} <br> Email Id: {{coord.Email}}</p>
+				<h2>Contact Number: {{coord.MobileNo}} <br> Email Id: {{coord.Email}}</h2>
 			</div>
 			<div class="flip-overlay"></div>
 		</div>
 	</div>
   </div>
 
-  <div class="row">
+  <div class="row" *ngIf="dept == 'Security'">
             
             <!-- Security -->
     <h2>Security</h2>  
@@ -151,14 +169,14 @@
 		<div class='square2' style="background-image: url('./app/assets/contactme1.jpg')">
 			<div class="square-container2">
 				<div class="align-center"></div>
-				<p>Contact Number: {{coord.MobileNo}} <br> Email Id: {{coord.Email}}</p>
+				<h2>Contact Number: {{coord.MobileNo}} <br> Email Id: {{coord.Email}}</h2>
 			</div>
 			<div class="flip-overlay"></div>
 		</div>
 	</div>
   </div>
 
-  <div class="row">
+  <div class="row" *ngIf="dept == 'Hospitality'">
 
             <!-- Hospitality -->
     <h2>Hospitality</h2>  
@@ -174,14 +192,14 @@
 		<div class='square2' style="background-image: url('./app/assets/contactme1.jpg')">
 			<div class="square-container2">
 				<div class="align-center"></div>
-				<p>Contact Number: {{coord.MobileNo}} <br> Email Id: {{coord.Email}}</p>
+				<h2>Contact Number: {{coord.MobileNo}} <br> Email Id: {{coord.Email}}</h2>
 			</div>
 			<div class="flip-overlay"></div>
 		</div>
 	</div>
   </div>
 
-  <div class="row">
+  <div class="row" *ngIf="dept == 'Finance'">
             
             <!-- Finance -->
     <h2>Finance</h2>  
@@ -197,7 +215,7 @@
 		<div class='square2' style="background-image: url('./app/assets/contactme1.jpg')">
 			<div class="square-container2">
 				<div class="align-center"></div>
-				<p>Contact Number: {{coord.MobileNo}} <br> Email Id: {{coord.Email}}</p>
+				<h2>Contact Number: {{coord.MobileNo}} <br> Email Id: {{coord.Email}}</h2>
 			</div>
 			<div class="flip-overlay"></div>
 		</div>
