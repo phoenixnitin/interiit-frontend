@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Http} from '@angular/http';
 import 'rxjs/add/operator/map';
 
@@ -8,7 +8,7 @@ import 'rxjs/add/operator/map';
     styleUrls: ['./app/assets/css/imagegallery.css','./app/assets/css/fancybox.css']
 })
 
-export class ImageGalleryComponent{
+export class ImageGalleryComponent implements OnInit{
 imageArray;
     constructor(private _http : Http){
 
@@ -18,8 +18,8 @@ imageArray;
     }
 
     ngOnInit(){
-            $(document).ready(() => {
-                $(".fancybox").fancybox({
+            jQuery(document).ready(() => {
+                jQuery(".fancybox").fancybox({
                     type: 'image',
                     helpers : {
                         title: {

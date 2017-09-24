@@ -205,7 +205,7 @@
   }
   .overlay ul li {
     display: block;
-    height: 18%;
+    height: fit-content;
     /*height: calc(100% / 4);*/
     min-height: 50px;
     position: relative;

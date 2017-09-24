@@ -12,7 +12,19 @@
     margin-top: -10px;
     padding-top: 10px;
     padding-right: 10px;
+    min-height: 350px;
 }
 .container section img{
     margin: 5px;
+}
+.video-box{
+    font-size: 500%;
+    text-align: center;
+}
+.fix-icon-position{
+    margin: 0 auto;
+    /*top: 41%;*/
+    /*left: 46%;*/
+    position: absolute;
+    color: #fb4a4a;
 }

@@ -13,6 +13,7 @@ import {NotExistComponent} from './not_exist/not_exist.component';
 import {SportsAquaticsComponent} from './sports/aquatics/aquatics.component';
 import {GalleryComponent} from './gallery/gallery.component';
 import {ImageGalleryComponent} from './gallery/ImageGallery/image.gallery.component';
+import {VideoGalleryComponent} from './gallery/VideoGallery/video.gallery.component';
 import {ContactCoreComponent} from './contactus/cores/core.component';
 import {ContactCoordComponent} from './contactus/coords/coord.component';
 import {MapComponent} from './map/map.component';
@@ -37,6 +38,7 @@ import {routerModule} from './app.routes';
      SportsAquaticsComponent,
      GalleryComponent,
      ImageGalleryComponent,
+     VideoGalleryComponent,
      ContactCoreComponent,
      ContactCoordComponent,
      MapComponent

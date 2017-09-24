@@ -1,0 +1,18 @@
+<div class="container">
+    <header><h2>INTER IIT VIDEOS</h2></header>
+
+    <section>
+        
+            <!--<div class="col-md-3" *ngFor="let image of imageArray">
+                <a [title]="image.title" class="fancybox" rel="group" href="http://www.drive.google.com/uc?export=view&id=0B1ZFllIeExkoV2xVT2piWXhMVTA"><img class="img-thumbnail" [src]="image.url" ></a>
+            </div>
+            <button (click)="onclick()">Submit</button>-->
+            <div class="col-md-3 col-sm-6 col-xs-12 video-box" *ngFor="let video of videoArray">
+
+                <a class="various fancybox.iframe" href="{{video.videoURL}}"><i class="fa fa-play fix-icon-position" aria-hidden="true"></i><img class="img-thumbnail" src="{{video.thumbnailURL}}" title="{{video.Title}}"></a>
+            </div>
+
+        
+    </section>
+</div>
+<!--<iframe width="854" height="480" src="https://www.youtube.com/embed/3_7_w6HuJJQ" frameborder="0" allowfullscreen></iframe>-->
