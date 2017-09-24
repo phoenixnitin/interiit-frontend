@@ -25,8 +25,8 @@ cores: Array<object>;
 
                     //For each Square found add BG image
                     for (let i = 0; i < countSquare; i++) {
-                        var firstImage = $('.square').eq([i]);
-                        var secondImage = $('.square2').eq([i]);
+                        var firstImage = $('.square').eq(i);
+                        var secondImage = $('.square2').eq(i);
 
                         var getImage = firstImage.attr('data-image');
                         var getImage2 = secondImage.attr('data-image');

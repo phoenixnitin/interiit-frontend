@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, AfterViewInit} from '@angular/core';
 import {Http} from '@angular/http';
 import 'rxjs/add/operator/map';
 import {win} from "@angular/platform-browser/src/facade/browser";
@@ -9,7 +9,7 @@ import {win} from "@angular/platform-browser/src/facade/browser";
     styleUrls: ['./app/assets/css/imagegallery.css','./app/assets/css/fancybox.css']
 })
 
-export class VideoGalleryComponent implements OnInit{
+export class VideoGalleryComponent implements OnInit, AfterViewInit{
 videoArray;
     constructor(private _http : Http){
 
@@ -25,7 +25,6 @@ videoArray;
             .subscribe(res => {
                 this.videoArray = res.json().Video;
                 // console.log(this.videoArray);
-                window.setTimeout(that.placePlay(), 15000);
                 jQuery(document).ready(() => {
                     jQuery(".various").fancybox({
                         maxWidth	: 800,
@@ -44,8 +43,15 @@ videoArray;
                     });
                 });
             });
-        window.setTimeout(that.placePlay(), 20000);
     }
+
+    ngAfterViewInit(){
+        let that = this;
+        setTimeout(function() {
+            that.placePlay();
+      }, 2000);
+    }
+
     placePlay(){
         var height = jQuery('.video-box').height();
         var width = jQuery('.video-box').width();
