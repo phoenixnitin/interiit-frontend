@@ -14,6 +14,9 @@ import {SportsAquaticsComponent} from './sports/aquatics/aquatics.component';
 import {GalleryComponent} from './gallery/gallery.component';
 import {ImageGalleryComponent} from './gallery/ImageGallery/image.gallery.component';
 import {VideoGalleryComponent} from './gallery/VideoGallery/video.gallery.component';
+import {ScheduleandResultComponent} from './scheduleandresult/scheduleandresult.component';
+import {RootComponent} from './scheduleandresult/root/root.component';
+import {WaterPoloComponent} from './scheduleandresult/waterpolo/waterpolo.component';
 import {ContactCoreComponent} from './contactus/cores/core.component';
 import {ContactCoordComponent} from './contactus/coords/coord.component';
 import {MapComponent} from './map/map.component';
@@ -39,6 +42,9 @@ import {routerModule} from './app.routes';
      GalleryComponent,
      ImageGalleryComponent,
      VideoGalleryComponent,
+     ScheduleandResultComponent,
+     RootComponent,
+     WaterPoloComponent,
      ContactCoreComponent,
      ContactCoordComponent,
      MapComponent

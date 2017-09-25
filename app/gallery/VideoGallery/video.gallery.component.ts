@@ -1,7 +1,6 @@
 import {Component, OnInit, AfterViewInit} from '@angular/core';
 import {Http} from '@angular/http';
 import 'rxjs/add/operator/map';
-import {win} from "@angular/platform-browser/src/facade/browser";
 
 @Component({
     selector: 'gallery-image',
@@ -29,11 +28,11 @@ videoArray;
                     jQuery(".various").fancybox({
                         maxWidth	: 800,
                         maxHeight	: 600,
-                        fitToView	: false,
+                        fitToView	: true,
                         width		: '70%',
                         height		: '70%',
-                        autoSize	: false,
-                        closeClick	: false,
+                        autoSize	: true,
+                        closeClick	: true,
                         openEffect	: 'none',
                         closeEffect	: 'none'
                     });
