@@ -57,3 +57,7 @@ button{
     padding: 5px;
     font-size: inherit;
 }
+.btn-default.active, .btn-default:hover{
+    background-color: #6dcfff;
+    border-color: #4597e6;
+}

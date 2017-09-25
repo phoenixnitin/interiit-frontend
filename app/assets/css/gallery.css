@@ -2,3 +2,10 @@
     position: relative;
     top: 150px;
 }
+#gallery-nav{
+    text-align: center;
+}
+.btn-default.active, .btn-default:hover{
+    background-color: #6dcfff;
+    border-color: #4597e6;
+}
