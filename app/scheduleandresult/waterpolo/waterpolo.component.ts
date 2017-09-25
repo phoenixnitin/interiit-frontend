@@ -3,7 +3,7 @@ import {Component, OnInit, AfterViewInit} from '@angular/core';
 @Component({
     selector: 'app-water-polo',
     templateUrl:'./app/scheduleandresult/waterpolo/waterpolo.html',
-    styleUrls:['./app/assets/css/scheduleandresults.css']
+    styleUrls:['./app/assets/css/scheduleandresults.css', './app/assets/css/common.css']
 })
 
 export class WaterPoloComponent implements OnInit, AfterViewInit{

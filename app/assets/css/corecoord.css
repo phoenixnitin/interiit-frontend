@@ -290,12 +290,12 @@ body:before {
       text-shadow: 2px 2px 2px #000;
 }
 
-.nav-pills > li > a{
+.nav-buttons > a{
     cursor: pointer;
-    background: whitesmoke;
+    /*background: whitesmoke;*/
     color: black;
 }
-.nav-pills > li > a:hover, .nav-pills > li.active > a{
+.nav-buttons:hover, .nav-buttons.active{
     background-color: #6dcfff;
     border-color: #4597e6;
 }
@@ -334,4 +334,10 @@ body:before {
 .details i{
     width: 20px;
     text-align: center;
+}
+nav{
+    text-align: center;
+}
+.nav-buttons {
+    margin: 5px;
 }

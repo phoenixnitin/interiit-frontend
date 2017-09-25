@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 @Component({
     selector: 'app-contactus',
     templateUrl: './app/contactus/contactus.html',
-    styleUrls:['./app/assets/css/contactus.css']
+    styleUrls:['./app/assets/css/contactus.css', './app/assets/css/common.css']
 })
 
 export class ContactUsComponent{
@@ -33,6 +33,14 @@ export class ContactUsComponent{
                 secondImage.css('background-image', 'url(' + getImage2 + ')');
             }
 
+            // jQuery('#core').click(function () {
+            //     jQuery('#core').addClass('active');
+            //     jQuery('#core').siblings().removeClass('active');
+            // });
+            // jQuery('#coord').click(function () {
+            //     jQuery('#coord').addClass('active');
+            //     jQuery('#coord').siblings().removeClass('active');
+            // });
         });
         //-----------Main Code for Service---------//
 

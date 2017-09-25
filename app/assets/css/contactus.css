@@ -3,3 +3,29 @@
     top: 150px;
     width: fit-content;
 }
+header nav{
+    text-align: center;
+}
+@media screen and (max-width: 767px){
+    .container{
+        min-width: calc(100% - 30px);
+    }
+}
+button{
+    padding: 30px;
+    min-height: 100px;
+    font-size: 30px;
+    min-width: fit-content;
+}
+.nav-buttons{
+    min-height: 0px;
+    padding: 5px;
+    font-size: inherit;
+}
+.nav-buttons a{
+    color: black;
+}
+.btn-default.active, .btn-default:hover{
+    background-color: #6dcfff;
+    border-color: #4597e6;
+}

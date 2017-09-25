@@ -9,3 +9,6 @@
     background-color: #6dcfff;
     border-color: #4597e6;
 }
+.btn-default > a{
+    color: black;
+}

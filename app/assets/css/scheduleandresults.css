@@ -25,6 +25,8 @@ body{
   text-align: center;
   padding: 0px;
   position: absolute;
+  min-width: fit-content;
+  min-height: -webkit-fill-available;
   height: 100%;
     background: rgba(21, 22, 29, .9); /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(rgba(21, 22, 29, .9), rgba(31, 31, 31, 0.9)); /* For Safari 5.1 to 6.0 */
@@ -45,6 +47,9 @@ body{
 }
 .display-space nav{
     margin-bottom: 10px;
+}
+.display-space iframe{
+    min-width: 380px;
 }
 button{
     padding: 30px;

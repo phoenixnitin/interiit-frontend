@@ -1,17 +1,15 @@
 <div class="container">
 	<header class="row" style="margin-top: 10px;">
-    	<nav class="col-md-12 col-md-offset-2">
-        	<ul class="nav nav-pills">
-            	<li [class.active]="dept == 'Design'"><a (click)="designclicked()">Design</a></li>
-            	<li [class.active]="dept == 'Events'"><a (click)="eventsclicked()">Events</a></li>
-            	<li [class.active]="dept == 'Facilities'"><a (click)="facilitiesclicked()">Facilities</a></li>
-            	<li [class.active]="dept == 'Finance'"><a (click)="financeclicked()">Finance</a></li>
-            	<li [class.active]="dept == 'Hospitality'"><a (click)="hospiclicked()">Hospitality</a></li>
-                <li [class.active]="dept == 'Media'"><a (click)="mediaclicked()">Media</a></li>
-            	<li [class.active]="dept == 'Security'"><a (click)="securityclicked()">Security</a></li>
-            	<li [class.active]="dept == 'Spons'"><a (click)="sponsclicked()">Spons</a></li>
-            	<li [class.active]="dept == 'WebOps'"><a (click)="webopsclicked()">WebOps</a></li>
-        	</ul>
+    	<nav class="col-xs-12">
+            <a (click)="designclicked()"><button class="btn btn-default nav-buttons" [class.active]="dept == 'Design'">Design</button></a>
+            <a (click)="eventsclicked()"><button class="btn btn-default nav-buttons" [class.active]="dept == 'Events'">Events</button></a>
+            <a (click)="facilitiesclicked()"><button class="btn btn-default nav-buttons" [class.active]="dept == 'Facilities'">Facilities</button></a>
+            <a (click)="financeclicked()"><button class="btn btn-default nav-buttons" [class.active]="dept == 'Finance'">Finance</button></a>
+            <a (click)="hospiclicked()"><button class="btn btn-default nav-buttons" [class.active]="dept == 'Hospitality'">Hospitality</button></a>
+            <a (click)="mediaclicked()"><button class="btn btn-default nav-buttons" [class.active]="dept == 'Media'">Media</button></a>
+            <a (click)="securityclicked()"><button class="btn btn-default nav-buttons" [class.active]="dept == 'Security'">Security</button></a>
+            <a (click)="sponsclicked()"><button class="btn btn-default nav-buttons" [class.active]="dept == 'Spons'">Spons</button></a>
+            <a (click)="webopsclicked()"><button class="btn btn-default nav-buttons" [class.active]="dept == 'WebOps'">WebOps</button></a>
     	</nav>
 	</header>
 

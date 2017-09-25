@@ -1,7 +1,7 @@
 <!--Desktop Navigation-->
   <span class="desktop">
     <header>
-      <span id="logo" class="col-xs-12 col-sm-12 col-lg-6"><img src="./app/assets/interiit_logo_main.png">52ND INTER IIT SPORTS MEET</span>
+      <span id="logo" class="col-xs-12 col-sm-12 col-lg-6"><a [routerLink]="['/home']"><img src="./app/assets/interiit_logo_main.png"></a>52ND INTER IIT SPORTS MEET</span>
       <nav class="col-xs-12 col-sm-12 col-lg-6">
         <a [routerLink]="['/home']">Home</a>
         <!--<a [routerLink]="['/sports']">Sports</a>-->
@@ -17,7 +17,7 @@
   <!--Mobile Navigation-->
   <span class="mobile">
     <header>
-      <span id="logo"><img src="./app/assets/interiit_logo_main.png">52ND Inter IIT Sports Meet</span>
+        <span id="logo"><a [routerLink]="['/home']"><img src="./app/assets/interiit_logo_main.png"></a>52ND Inter IIT Sports Meet</span>
       <div id="menuButton" (click)="toggleMenu()" class="button_container">
         <span class="top"></span>
         <span class="middle"></span>
