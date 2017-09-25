@@ -18,7 +18,7 @@ Security: Array<object>;
 Hospitality: Array<object>;
 Finance: Array<object>;
 image_url="http://www.drive.google.com/uc?export=view&id=";
-dept = 'WebOps';
+dept = 'Design';
 
     webopsclicked(){
         this.dept = 'WebOps';
