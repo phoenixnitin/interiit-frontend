@@ -287,3 +287,7 @@
 .landing.loaded {
   transform: scale(1.0);
 }
+
+#logo img{
+    max-height: 70px;
+}
