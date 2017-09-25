@@ -12,7 +12,7 @@ body {
   background: #999 url(./app/assets/contact.jpg) center no-repeat;
   background-size: cover;
   overflow: hidden;
-  padding-right: 50px;
+  /*padding-right: 50px;*/
   position: relative;
   top: 20px;
 }
@@ -290,4 +290,38 @@ body:before {
 
 .nav-pills > li > a{
     cursor: pointer;
+}
+
+
+/*----------new card---------*/
+
+.cardstore{
+    text-align: left;
+}
+.cardstore h2{
+    text-align: center;
+}
+.card{
+    min-height: 175px;
+    min-width: 450px;
+    margin: 5px 0px;
+}
+.member-card{
+    background-color: white;
+    color: black;
+}
+.member-card p{
+    font-size: 120%;
+    border-bottom: 1px solid #636363;
+}
+.details{
+    padding: 15px;
+    text-shadow: 0px 0px 1px #636363;
+    -webkit-box-shadow: 5px 5px 5px #636363;
+    -moz-box-shadow: 5px 5px 5px #636363;
+    box-shadow: 5px 5px 5px #636363;
+}
+.details i{
+    width: 20px;
+    text-align: center;
 }
