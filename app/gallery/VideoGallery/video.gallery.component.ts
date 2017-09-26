@@ -44,10 +44,10 @@ videoArray;
                     var placeplay = setInterval(function () {
                         startrepeat();
                         i++;
-                        if(i > 1){
+                        if(i > 10){
                             stoprepeat();
                         }
-                    }, 1000);
+                    }, 50);
                     function startrepeat(){
                         that.placePlay();
                         // console.log("test");
@@ -58,7 +58,6 @@ videoArray;
                 });
             });
     }
-
     placePlay(){
         var height = jQuery('.video-box').height();
         var width = jQuery('.video-box').width();

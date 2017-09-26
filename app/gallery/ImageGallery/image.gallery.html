@@ -3,32 +3,8 @@
 
     <section>
         
-            <!--<div class="col-md-3" *ngFor="let image of imageArray">
-                <a [title]="image.title" class="fancybox" rel="group" href="http://www.drive.google.com/uc?export=view&id=0B1ZFllIeExkoV2xVT2piWXhMVTA"><img class="img-thumbnail" [src]="image.url" ></a>
+            <div class="each-image" *ngFor="let image of imageArray">
+                <a [title]="image.Title" class="fancybox image-link" rel="group" [href]="image.imageURL"><img class="img-thumbnail image-size" [src]="image.imageURL" ></a>
             </div>
-            <button (click)="onclick()">Submit</button>-->
-            <!--<div class="col-md-3">-->
-                <!--<a title="Image2" class="fancybox" rel="group" href="./app/assets/image2.jpg"><img class="img-thumbnail" src="./app/assets/image2.jpg" ></a>-->
-            <!--</div>-->
-            <!--<div class="col-md-3">-->
-                <!--<a title="Image3" class="fancybox" rel="group" href="./app/assets/image3.jpg"><img class="img-thumbnail" src="./app/assets/image3.jpg" ></a>-->
-            <!--</div>-->
-            <!--<div class="col-md-3">-->
-                <!--<a title="Image4" class="fancybox" rel="group" href="./app/assets/image4.jpg"><img class="img-thumbnail" src="./app/assets/image4.jpg" ></a>-->
-            <!--</div>-->
-        <!---->
-            <!--<div class="col-md-3">-->
-                <!--<a title="Image5" class="fancybox" rel="group" href="./app/assets/image5.jpg"><img class="img-thumbnail" src="./app/assets/image5.jpg" ></a>-->
-            <!--</div>-->
-            <!--<div class="col-md-3">-->
-                <!--<a title="Image6" class="fancybox" rel="group" href="./app/assets/image6.jpg"><img class="img-thumbnail" src="./app/assets/image6.jpg" ></a>-->
-            <!--</div>-->
-            <!--<div class="col-md-3">-->
-                <!--<a title="Image7" class="fancybox" rel="group" href="./app/assets/image7.jpg"><img class="img-thumbnail" src="./app/assets/image7.jpg" ></a>-->
-            <!--</div>-->
-            <!--<div class="col-md-3">-->
-                <!--<a title="Image8" class="fancybox" rel="group" href="./app/assets/image8.jpg"><img class="img-thumbnail" src="./app/assets/image8.jpg" ></a>-->
-            <!--</div>-->
-        
     </section>
 </div>

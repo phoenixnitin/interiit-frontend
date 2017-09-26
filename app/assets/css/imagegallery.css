@@ -13,6 +13,7 @@
     padding-top: 10px;
     padding-right: 10px;
     min-height: 350px;
+    text-align: center;
 }
 .container section img{
     margin: 5px;
@@ -27,4 +28,15 @@
     /*left: 46%;*/
     position: absolute;
     color: #fb4a4a;
+}
+
+.each-image{
+    max-height: 200px;
+    display: inline;
+}
+.image-link{
+    max-height: inherit;
+}
+.image-size{
+    max-height: inherit;
 }
