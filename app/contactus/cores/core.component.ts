@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Http} from '@angular/http';
 
 @Component({
@@ -7,7 +7,7 @@ import {Http} from '@angular/http';
     styleUrls: ['./app/assets/css/corecoord.css']
 })
 
-export class ContactCoreComponent{
+export class ContactCoreComponent implements OnInit{
 
 image_url="http://www.drive.google.com/uc?export=view&id=";
 //image_url='./app/assets/pic1.jpg';

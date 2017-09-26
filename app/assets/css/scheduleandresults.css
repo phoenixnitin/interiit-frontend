@@ -57,6 +57,14 @@ button{
     font-size: 30px;
     min-width: fit-content;
 }
+.schedule-button{
+    border-radius: 0px;
+    box-shadow: 5px 5px 5px #585858;
+    color: black;
+}
+.schedule-button:hover{
+    color: black;
+}
 .nav-buttons{
     min-height: 0px;
     padding: 5px;
@@ -65,4 +73,7 @@ button{
 .btn-default.active, .btn-default:hover{
     background-color: #6dcfff;
     border-color: #4597e6;
+}
+.card{
+    margin-bottom: 50px;
 }

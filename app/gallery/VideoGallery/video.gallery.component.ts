@@ -13,9 +13,9 @@ videoArray;
     constructor(private _http : Http){
 
     }
-    onclick(){
-        console.log(this.videoArray);
-    }
+    // onclick(){
+    //     console.log(this.videoArray);
+    // }
 
     ngOnInit(){
 
@@ -40,15 +40,23 @@ videoArray;
                     jQuery(window).resize(function () {
                         that.placePlay();
                     });
+                    var i = 0;
+                    var placeplay = setInterval(function () {
+                        startrepeat();
+                        i++;
+                        if(i > 1){
+                            stoprepeat();
+                        }
+                    }, 1000);
+                    function startrepeat(){
+                        that.placePlay();
+                        // console.log("test");
+                    }
+                    function stoprepeat() {
+                        clearInterval(placeplay);
+                    }
                 });
             });
-    }
-
-    ngAfterViewInit(){
-        let that = this;
-        setTimeout(function() {
-            that.placePlay();
-      }, 1000);
     }
 
     placePlay(){
