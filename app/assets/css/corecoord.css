@@ -84,6 +84,7 @@ body:before {
       transform: rotateY(0deg);
       transform-style: preserve-3d;
       z-index:1;
+      border: 5px solid white;
     }
     .square-flip:hover .square{
       -webkit-transform: rotateY(-180deg);
@@ -119,6 +120,7 @@ body:before {
       transform: rotateY(180deg);
       transform-style: preserve-3d;
       z-index:1;
+      border: 5px solid white;
     }
     .square-flip:hover .square2{
       -webkit-transform: rotateY(0deg);
