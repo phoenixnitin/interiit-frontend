@@ -1,23 +1,24 @@
 <div class="container">
 <div class="centerflipcards">
-    
-	<div class="square-flip" *ngFor="let core of cores">
-		<div class='square' [ngStyle]="{'background-image': 'url('+image_url+core.PhotoID+')'}">
-			<div class="square-container">
-				
-				<h2 class="textshadow">{{core.Name}}</h2>
-				<h3 class="textshadow">{{core.Department}}</h3>
-			</div>
-			<div class="flip-overlay"></div>
-		</div>
-		<div class='square2' style="background-image: url('./app/assets/contactme1.jpg')">
-			<div class="square-container2">
-				<div class="align-center"></div>
-				<p>Contact Number: {{core.MobileNo}} <br> Email Id: {{core.Email}}</p>
-			</div>
-			<div class="flip-overlay"></div>
-		</div>
-	</div>
+    <div class="col-xs-12 col-sm-6 col-lg-4" *ngFor="let core of cores">
+        <div class="square-flip">
+            <div class='square' [ngStyle]="{'background-image': 'url('+image_url+core.PhotoID+')'}">
+                <div class="square-container">
+
+                    <h2 class="textshadow">{{core.Name}}</h2>
+                    <h3 class="textshadow">{{core.Department}}</h3>
+                </div>
+                <div class="flip-overlay"></div>
+            </div>
+            <div class='square2' style="background-image: url('./app/assets/contactme1.jpg')">
+                <div class="square-container2">
+                    <div class="align-center"></div>
+                    <p>Contact Number: {{core.MobileNo}} <br> Email Id: {{core.Email}}</p>
+                </div>
+                <div class="flip-overlay"></div>
+            </div>
+        </div>
+    </div>
 
 	<!--<div class="square-flip">
 		<div class='square' data-image="./app/assets/pic2.jpg">

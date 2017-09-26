@@ -17,7 +17,12 @@ export class ContactUsComponent{
     ngOnInit(){
         //--------------Code For Animation-----------//
         jQuery(document).ready(function($) {
-
+            if(window.location.pathname == "/contactus/core"){
+                jQuery('#core').addClass('active');
+            }
+            else{
+                jQuery('#coord').addClass('active');
+            }
             //Count nr. of square classes
             var countSquare = $('.square').length;
 
@@ -33,14 +38,14 @@ export class ContactUsComponent{
                 secondImage.css('background-image', 'url(' + getImage2 + ')');
             }
 
-            // jQuery('#core').click(function () {
-            //     jQuery('#core').addClass('active');
-            //     jQuery('#core').siblings().removeClass('active');
-            // });
-            // jQuery('#coord').click(function () {
-            //     jQuery('#coord').addClass('active');
-            //     jQuery('#coord').siblings().removeClass('active');
-            // });
+            jQuery('#core').click(function () {
+                jQuery('#core').addClass('active');
+                jQuery('#coord').removeClass('active');
+            });
+            jQuery('#coord').click(function () {
+                jQuery('#coord').addClass('active');
+                jQuery('#core').removeClass('active');
+            });
         });
         //-----------Main Code for Service---------//
 

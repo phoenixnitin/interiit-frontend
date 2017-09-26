@@ -47,8 +47,8 @@ body:before {
     /*border:1px solid #efefef;*/
 
     position:relative;
-    float:left;
-    margin:20px;
+    /*float:left;*/
+    margin:20px auto;
 
     }
     .square-flip{
