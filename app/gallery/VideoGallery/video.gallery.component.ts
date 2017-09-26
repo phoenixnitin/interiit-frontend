@@ -48,7 +48,7 @@ videoArray;
         let that = this;
         setTimeout(function() {
             that.placePlay();
-      }, 2000);
+      }, 1000);
     }
 
     placePlay(){

@@ -1,8 +1,8 @@
 <div class="container">
 <header class="row">
     <nav id="gallery-nav">
-            <button class="btn btn-default nav-buttons" routerLinkActive="active"><a [routerLink]="['image']" >Images</a></button>
-            <button class="btn btn-default nav-buttons" routerLinkActive="active"><a [routerLink]="['video']">Videos</a></button>
+            <a [routerLink]="['image']"><button id="gallery-image" class="btn btn-default nav-buttons" >Images</button></a>
+            <a [routerLink]="['video']"><button id="gallery-video" class="btn btn-default nav-buttons" >Videos</button></a>
     </nav>
 </header>
 <router-outlet></router-outlet>
