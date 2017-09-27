@@ -22,12 +22,12 @@ export class WaterPoloComponent implements OnInit, AfterViewInit{
 
             jQuery('#schedule').click(function () {
                 jQuery('.display-space nav').children().removeClass('active');
-                jQuery('.display-space iframe').attr('src','http://indiaatsports.com/widget_matches?tournamentid=5541144758845440');
+                jQuery('.display-space iframe').attr('src','https://worldatsports.appspot.com/widget_matches?tournamentid=5541144758845440');
                 jQuery('.display-space nav #schedule').addClass('active');
             });
             jQuery('#pointstable').click(function () {
                 jQuery('.display-space nav').children().removeClass('active');
-                jQuery('.display-space iframe').attr('src','http://indiaatsports.com/widget_pointstable?tournamentid=5541144758845440');
+                jQuery('.display-space iframe').attr('src','https://worldatsports.appspot.com/widget_pointstable?tournamentid=5541144758845440');
                 jQuery('.display-space nav #pointstable').addClass('active');
             });
         });

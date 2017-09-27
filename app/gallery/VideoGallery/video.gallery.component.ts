@@ -1,4 +1,4 @@
-import {Component, OnInit, AfterViewInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Http} from '@angular/http';
 import 'rxjs/add/operator/map';
 
@@ -8,7 +8,7 @@ import 'rxjs/add/operator/map';
     styleUrls: ['./app/assets/css/imagegallery.css','./app/assets/css/fancybox.css']
 })
 
-export class VideoGalleryComponent implements OnInit, AfterViewInit{
+export class VideoGalleryComponent implements OnInit{
 videoArray;
     constructor(private _http : Http){
 
