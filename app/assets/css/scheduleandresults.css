@@ -59,7 +59,7 @@ button{
 }
 .schedule-button{
     border-radius: 0px;
-    box-shadow: 5px 5px 5px #585858;
+    /*box-shadow: 5px 5px 5px #585858;*/
     color: black;
 }
 .schedule-button:hover{
@@ -76,4 +76,13 @@ button{
 }
 .card{
     margin-bottom: 50px;
+}
+.waterpolo-btn{
+    background: url(./app/assets/icons/waterpolo.png);
+    background-position: center;
+    background-size: contain;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    text-shadow: 0px 0px 1px;
 }
