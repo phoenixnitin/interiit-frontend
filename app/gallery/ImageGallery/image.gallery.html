@@ -1,7 +1,7 @@
 <div class="container">
     <header><h2>INTER IIT IMAGES</h2></header>
 
-    <section>
+    <section class="col-xs-12">
         
             <div class="each-image" *ngFor="let image of imageArray">
                 <a [title]="image.Title" class="fancybox image-link" rel="group" [href]="image.imageURL"><img class="img-thumbnail image-size" [src]="image.imageURL" ></a>

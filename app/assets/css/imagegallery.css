@@ -9,6 +9,7 @@
     overflow: hidden;
     position: relative;
     top: 0px;
+    display: inline-block;
     margin-top: -10px;
     padding-top: 10px;
     padding-right: 10px;
@@ -23,20 +24,29 @@
     text-align: center;
 }
 .fix-icon-position{
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     /*top: 41%;*/
     /*left: 46%;*/
     position: absolute;
     color: #fb4a4a;
+    margin-top: 72px;
+    margin-left: -15px;
 }
+/*.visibility{*/
+    /*visibility: hidden;*/
+/*}*/
 
-.each-image{
+.each-image, .each-video{
     max-height: 200px;
-    display: inline;
+    display: inline-table;
 }
-.image-link{
+.image-link, .video-link{
     max-height: inherit;
 }
-.image-size{
+.image-size, .video-size{
     max-height: inherit;
+}
+.fixit{
+    width: inherit;
+    text-align: center;
 }

@@ -1,8 +1,8 @@
 <div class="container">
     <header><h2>INTER IIT VIDEOS</h2></header>
-    <section>
-        <div class="col-md-3 col-sm-6 col-xs-12 video-box" *ngFor="let video of videoArray">
-            <a class="various fancybox.iframe" href="{{video.videoURL}}"><i class="fa fa-play fix-icon-position" aria-hidden="true"></i><img class="img-thumbnail" src="{{video.thumbnailURL}}" title="{{video.Title}}"></a>
+    <section class="col-xs-12">
+        <div class="each-video video-box" *ngFor="let video of videoArray">
+            <a class="various video-link fancybox.iframe" href="{{video.videoURL}}"><div class="fixit"><i class="fa fa-play fix-icon-position " aria-hidden="true"></i></div><img class="video-size img-thumbnail" src="{{video.thumbnailURL}}" title="{{video.Title}}"></a>
         </div>
     </section>
 </div>

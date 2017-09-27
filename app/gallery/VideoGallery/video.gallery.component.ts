@@ -19,7 +19,6 @@ videoArray;
 
     ngOnInit(){
 
-        let that = this;
         this._http.get('https://script.google.com/macros/s/AKfycbygukdW3tt8sCPcFDlkMnMuNu9bH5fpt7bKV50p2bM/exec?id=1EcJRWQPx_IEjsq4EBeOoHfSSjqpxbziqdlFm0JsNkeI&sheet=Video')
             .subscribe(res => {
                 this.videoArray = res.json().Video;
@@ -34,37 +33,16 @@ videoArray;
                         autoSize	: true,
                         closeClick	: true,
                         openEffect	: 'none',
-                        closeEffect	: 'none'
-                    });
-                    that.placePlay();
-                    jQuery(window).resize(function () {
-                        that.placePlay();
-                    });
-                    var i = 0;
-                    var placeplay = setInterval(function () {
-                        startrepeat();
-                        i++;
-                        if(i > 10){
-                            stoprepeat();
+                        closeEffect	: 'none',
+                        nextEffect  : 'none',
+                        prevEffect  : 'none',
+                        helpers     : {
+                            title : {
+                                type : 'outside' // 'float', 'inside', 'outside' or 'over'
+                            }
                         }
-                    }, 50);
-                    function startrepeat(){
-                        that.placePlay();
-                        // console.log("test");
-                    }
-                    function stoprepeat() {
-                        clearInterval(placeplay);
-                    }
+                    });
                 });
             });
     }
-    placePlay(){
-        var height = jQuery('.video-box').height();
-        var width = jQuery('.video-box').width();
-        var height_icon = jQuery('.fix-icon-position').height();
-        var width_icon = jQuery('.fix-icon-position').width();
-        jQuery('.fix-icon-position').css('top',((height-height_icon)/2)+3);
-        jQuery('.fix-icon-position').css('left',((width-width_icon)/2)+15);
-    }
-
 }
