@@ -15,6 +15,7 @@ body {
   /*padding-right: 50px;*/
   position: relative;
   top: 20px;
+    padding:0 0;
   min-height: 525px;
 }
 

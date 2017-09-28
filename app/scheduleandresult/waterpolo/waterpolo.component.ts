@@ -29,7 +29,7 @@ export class WaterPoloComponent implements OnInit, AfterViewInit{
                 jQuery('.display-space nav #pointstable').addClass('active');
             });
             function framedimen() {
-                var window_height = jQuery(window).height();
+                var window_height = jQuery(document).height();
                 var heading_height = jQuery('.display-space h2').height();
                 var nav_height = jQuery('.display-space nav').height();
                 jQuery('.display-space iframe').attr('height', window_height - heading_height - nav_height - 150);

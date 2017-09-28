@@ -1,6 +1,12 @@
 /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
-      #map {
+
+.map-container{
+position: absolute;
+height: 100%;
+width: 100%;
+}
+#map {
         height: calc(100% - 103px);
         position: relative;
         top: 100px;
