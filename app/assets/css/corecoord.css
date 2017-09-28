@@ -190,13 +190,13 @@ body:before {
     /*Style text*/
     .square-flip h2{
       color:white;
-      font-family: "Open Sans";
+      /*font-family: "Open Sans";*/
       font-weight:700;
       font-size:22px;
     }
     .square-flip h3{
       color:white;
-      font-family: "Open Sans";
+      /*font-family: "Open Sans";*/
       font-weight:500;
       font-size:16px;
       line-height:26px;
@@ -217,7 +217,7 @@ body:before {
       display:block;
       width:160px;
       padding:18px 30px;
-      font-family:"Open Sans";
+      /*font-family:"Open Sans";*/
       font-weight:600;
       color:#fff;
       background:#FF2024;
@@ -285,7 +285,7 @@ body:before {
     }
 .clearfix{clear:both;}
 .centerflipcards p{
-      font-family:"Open Sans";
+      /*font-family:"Open Sans";*/
       font-size:17px;
       margin-top:10px;
       font-weight:700;
