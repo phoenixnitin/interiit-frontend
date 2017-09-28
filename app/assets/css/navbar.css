@@ -18,7 +18,7 @@
   header #logo {
     float: left;
     /*margin-left: 5%;*/
-    font-family: 'Open Sans';
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-weight: 300;
@@ -35,7 +35,7 @@
     color: #a3a3a3;
     font-size: 18px;
     font-weight: 300;
-    font-family: 'Lato', serif, sans-serif;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     text-decoration: none;
     margin-left: 22px;
     border-bottom: 2px solid rgba(255, 255, 255, 0);
