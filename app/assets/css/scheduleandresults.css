@@ -86,3 +86,13 @@ button{
     background-blend-mode: darken;
     text-shadow: 0px 0px 1px;
 }
+
+.swimming-btn{
+    background: url(./app/assets/icons/swim.png);
+    background-position: center;
+    background-size: contain;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    text-shadow: 0px 0px 1px;
+}
