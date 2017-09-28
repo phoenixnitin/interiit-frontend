@@ -18,7 +18,7 @@ import {ScheduleandResultComponent} from './scheduleandresult/scheduleandresult.
 import {RootComponent} from './scheduleandresult/root/root.component';
 import {WaterPoloComponent} from './scheduleandresult/waterpolo/waterpolo.component';
 import {ContactCoreComponent} from './contactus/cores/core.component';
-import {ContactCoordComponent} from './contactus/coords/coord.component';
+// import {ContactCoordComponent} from './contactus/coords/coord.component';
 import {MapComponent} from './map/map.component';
 
 import {routerModule} from './app.routes';
@@ -46,7 +46,7 @@ import {routerModule} from './app.routes';
      RootComponent,
      WaterPoloComponent,
      ContactCoreComponent,
-     ContactCoordComponent,
+     // ContactCoordComponent,
      MapComponent
       ],
   providers:[
