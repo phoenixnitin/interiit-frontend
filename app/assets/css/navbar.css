@@ -20,7 +20,7 @@
     /*margin-left: 5%;*/
     font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     font-weight: 300;
     font-size: 30px;
     color: #fdad59;
@@ -96,7 +96,7 @@
   #logo {
     float: left;
     margin-left: 20px;
-    font-family: 'Open Sans';
+    /*font-family: 'Open Sans';*/
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 200;
@@ -190,7 +190,7 @@
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     font-size: 40px;
-    font-family: 'Lato', serif;
+    /*font-family: 'Lato', serif;*/
     font-weight: lighter;
     letter-spacing: 10px;
     text-align: center;

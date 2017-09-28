@@ -60,7 +60,7 @@
   /*width: */
   padding-bottom: 5px;
   
-  font-family: 'Cinzel';
+  /*font-family: 'Cinzel';*/
 }
 
 /*.motto {
@@ -192,7 +192,7 @@
 }
 
 .about h1 {
-  font-family: 'Lato', serif, sans-serif;
+  /*font-family: 'Lato', serif, sans-serif;*/
   font-weight: 100;
   font-size: 40px;
   margin-top: 100px;
@@ -201,7 +201,7 @@
 
 #mission {
   margin-top: 80px;
-  font-family: 'Noto Serif', serif, sans-serif;
+  /*font-family: 'Noto Serif', serif, sans-serif;*/
   font-style: italic;
   font-size: 20px;
   color: #999;
@@ -415,8 +415,11 @@
     top:60px;
     width: 100%;
     text-align: center;
+    height: 55%;
 }
 .logo-container img{
     height: 35%;
     min-height: 180px;
+    max-height: 400px;
+    height: 65%;
 }

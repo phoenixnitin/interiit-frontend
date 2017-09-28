@@ -27,7 +27,7 @@ body{
   position: absolute;
   min-width: fit-content;
   min-height: -webkit-fill-available;
-  height: 100%;
+  height: fit-content;
     background: rgba(21, 22, 29, .9); /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(rgba(21, 22, 29, .9), rgba(31, 31, 31, 0.9)); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(rgba(21, 22, 29, .9), rgba(31, 31, 31, 0.9)); /* For Opera 11.1 to 12.0 */
