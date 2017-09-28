@@ -5,6 +5,11 @@
 }
 header nav{
     text-align: center;
+    color: #000000;
+    background-color: #b5d4b5;
+}
+header nav h2{
+    padding: 5px;
 }
 @media screen and (max-width: 767px){
     .container{
