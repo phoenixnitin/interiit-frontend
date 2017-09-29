@@ -31,7 +31,7 @@ width: 100%;
   border-radius: 4px;
 }
 
-@media screen and (max-width: 1289px){
+@media screen and (max-width: 1389px){
     #map{
         top:70px;
         height: calc(100% - 70px);
@@ -41,7 +41,7 @@ width: 100%;
     }
 }
 
-@media screen and (max-width: 1289px){
+@media screen and (max-width: 1389px){
     #map{
         top:70px;
     }

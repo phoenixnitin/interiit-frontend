@@ -47,3 +47,6 @@
     position: relative;
     display: inline-table;
 }
+.left-image-bg{
+    background-color: beige;
+}
