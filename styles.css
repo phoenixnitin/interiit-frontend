@@ -44,5 +44,9 @@
 }
 body {
   background-color: black;
-  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  /*font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;*/
+  font-family: 'Ubuntu Light';
+}
+.navbar-font, .all-heading{
+    font-family: 'cassannet_plusregular';
 }

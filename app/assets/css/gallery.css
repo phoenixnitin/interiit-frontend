@@ -4,6 +4,7 @@
 }
 #gallery-nav{
     text-align: center;
+    padding-left: 3%;
 }
 .btn-default.active, .btn-default:hover{
     background-color: #6dcfff;

@@ -20,6 +20,7 @@ import {WaterPoloComponent} from './scheduleandresult/waterpolo/waterpolo.compon
 import {SwimmingComponent} from './scheduleandresult/swimming/swimming.component';
 import {ContactCoreComponent} from './contactus/cores/core.component';
 // import {ContactCoordComponent} from './contactus/coords/coord.component';
+import {EventComponent} from './events/events.component';
 import {MapComponent} from './map/map.component';
 
 import {routerModule} from './app.routes';
@@ -49,7 +50,8 @@ import {routerModule} from './app.routes';
      SwimmingComponent,
      ContactCoreComponent,
      // ContactCoordComponent,
-     MapComponent
+     MapComponent,
+      EventComponent
       ],
   providers:[
      UpdateService,

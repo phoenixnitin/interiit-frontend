@@ -8,6 +8,7 @@ import {NotExistComponent} from './not_exist/not_exist.component';
 import {GalleryComponent} from './gallery/gallery.component';
 import {MapComponent} from './map/map.component';
 import {ScheduleandResultComponent} from './scheduleandresult/scheduleandresult.component';
+import {EventComponent} from './events/events.component';
 
 import {GALLERY_ROUTES} from './gallery/gallery.routes';
 import {CONTACTUS_ROUTES} from './contactus/contactus.routes';
@@ -21,6 +22,7 @@ const APP_ROUTES: Routes = [
     // {path: 'sports-aquatics', component: SportsAquaticsComponent},
     {path: 'contactus', component: ContactUsComponent, children: CONTACTUS_ROUTES},
     {path: 'gallery', component: GalleryComponent, children: GALLERY_ROUTES},
+    {path: 'events', component: EventComponent},
     {path: 'scheduleandresults', component: ScheduleandResultComponent, children: SCHEDULEANDRESULT_ROUTES},
     {path: 'maps', component: MapComponent },
     {path: '**', component: NotExistComponent}
