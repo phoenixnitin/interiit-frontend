@@ -441,8 +441,11 @@
 }
 #socialRow > a{
     margin: 0 20px;
+    color: black;
 }
-
+#socialRow > a:hover{
+    color: black;
+}
 @media screen and (max-width: 420px){
     .socialIcon-yt > img{
     height: 60px;
