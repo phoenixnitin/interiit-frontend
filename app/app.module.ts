@@ -22,6 +22,7 @@ import {ContactCoreComponent} from './contactus/cores/core.component';
 // import {ContactCoordComponent} from './contactus/coords/coord.component';
 import {EventComponent} from './events/events.component';
 import {MapComponent} from './map/map.component';
+import {SocialCampaignComponent} from './socialcampaign/socialcampaign';
 
 import {routerModule} from './app.routes';
 
@@ -51,7 +52,8 @@ import {routerModule} from './app.routes';
      ContactCoreComponent,
      // ContactCoordComponent,
      MapComponent,
-      EventComponent
+     EventComponent,
+     SocialCampaignComponent
       ],
   providers:[
      UpdateService,
