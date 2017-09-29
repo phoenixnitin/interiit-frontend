@@ -93,7 +93,7 @@ mouseclick() {
     // If the count down is over, write some text
     if (distance < 0) {
         clearInterval(this.x);
-        document.getElementById("countdown").innerHTML = "EXPIRED";
+        document.getElementById("countdown").innerHTML = "";
     }
 }, 1000);
 }

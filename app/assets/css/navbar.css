@@ -1,7 +1,7 @@
 
 /*Desktop navigation*/
 
-@media screen and (min-width: 1390px) {
+@media screen and (min-width: 1460px) {
   .mobile {
     display: none;
   }
@@ -24,11 +24,15 @@
     font-weight: 300;
     font-size: 30px;
     color: #fdad59;
+    max-width: fit-content;
+    max-width: -moz-fit-content;
   }
   header nav {
     float: right;
     /*margin-right: 5%;*/
     text-align: end;
+    min-width: fit-content;
+    min-width: -moz-fit-content;
   }
   header nav a {
     position: relative;
@@ -61,7 +65,7 @@
 
 /*Mobile*/
 
-@media screen and (max-width: 1389px) {
+@media screen and (max-width: 1459px) {
   .desktop {
     display: none;
   }
