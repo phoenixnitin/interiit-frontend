@@ -25,6 +25,9 @@
 .event-image{
     max-height: 400px;
 }
+.event-image-full{
+    max-height: 800px;
+}
 .event-text{
     font-size: 20px;
     text-align: justify;

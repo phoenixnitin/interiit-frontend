@@ -295,3 +295,13 @@
 #logo img{
     max-height: 70px;
 }
+#menuoverlay nav ul{
+  width: calc(100% - 90px);
+  min-width: fit-content ;
+}
+#menuoverlay nav li{
+  border-bottom: 2px solid white;
+}
+#menuoverlay nav li:first-child{
+  border-top: 2px solid white;
+}
