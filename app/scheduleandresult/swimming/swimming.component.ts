@@ -20,7 +20,7 @@ export class SwimmingComponent implements OnInit, AfterViewInit{
             });
             jQuery('#schedule').click(function () {
                 jQuery('.display-space nav').children().removeClass('active');
-                jQuery('.display-space iframe').attr('src','https://worldatsports.appspot.com/widget_matches?tournamentid=6730339196076032');
+                jQuery('.display-space iframe').attr('src','http://indiaatsports.com/widget_matches?tournamentid=6730339196076032');
                 jQuery('.display-space nav #schedule').addClass('active');
             });
             // jQuery('#pointstable').click(function () {
