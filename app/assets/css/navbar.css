@@ -1,7 +1,7 @@
 
 /*Desktop navigation*/
 
-@media screen and (min-width: 1460px) {
+@media screen and (min-width: 1390px) {
   .mobile {
     display: none;
   }
@@ -24,15 +24,11 @@
     font-weight: 300;
     font-size: 30px;
     color: #fdad59;
-    max-width: fit-content;
-    max-width: -moz-fit-content;
   }
   header nav {
     float: right;
     /*margin-right: 5%;*/
     text-align: end;
-    min-width: fit-content;
-    min-width: -moz-fit-content;
   }
   header nav a {
     position: relative;
@@ -65,7 +61,7 @@
 
 /*Mobile*/
 
-@media screen and (max-width: 1459px) {
+@media screen and (max-width: 1389px) {
   .desktop {
     display: none;
   }
@@ -295,13 +291,50 @@
 #logo img{
     max-height: 70px;
 }
-#menuoverlay nav ul{
-  width: calc(100% - 90px);
-  min-width: fit-content ;
+
+.customBell{
+  font-size: 35px;
+  color: #fdad59;
+  position: fixed;
+  right: 80px;
+  top: 18px;
+  cursor: pointer;
 }
-#menuoverlay nav li{
-  border-bottom: 2px solid white;
+
+#notifications {
+    display: inline-block;
+    /*width:430px;*/
+    width: 20%;
+    position:absolute;
+    top:90px;
+    right:50px;
+    background:#FFF;
+    border:solid 1px rgba(100, 100, 100, .20);
+    border-radius: 5px;
+    -webkit-box-shadow:0 3px 8px rgba(0, 0, 0, .20);
+    z-index: 0;
+    background-color: #333333;
+    color: white;
 }
-#menuoverlay nav li:first-child{
-  border-top: 2px solid white;
+  /* AN ARROW LIKE STRUCTURE JUST OVER THE NOTIFICATIONS WINDOW */
+#notifications:before {         
+    content: '';
+    display: inline-block;
+    width:0;
+    height:0;
+    color:transparent;
+    border-bottom:25px solid #CCC;
+    border-right:15px solid #CCC;
+    border-left:15px solid #CCC;
+    border-color:transparent transparent #333333;
+    margin-top: -20px;
+    /*margin-left: 211px;*/
+    position: fixed;
+    right: 80px;
+
+}
+
+#notifications h3{
+    margin-left: 25%;
+    margin-bottom: 20px;
 }
