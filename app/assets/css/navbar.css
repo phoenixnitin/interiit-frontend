@@ -1,7 +1,7 @@
 
 /*Desktop navigation*/
 
-@media screen and (min-width: 1390px) {
+@media screen and (min-width: 1570px) {
   .mobile {
     display: none;
   }
@@ -24,11 +24,15 @@
     font-weight: 300;
     font-size: 30px;
     color: #fdad59;
+    max-width: fit-content;
+    max-width: -moz-fit-content;
   }
   header nav {
     float: right;
     /*margin-right: 5%;*/
     text-align: end;
+    min-width: fit-content;
+    min-width: -moz-fit-content;
   }
   header nav a {
     position: relative;
@@ -61,7 +65,7 @@
 
 /*Mobile*/
 
-@media screen and (max-width: 1389px) {
+@media screen and (max-width: 1569px) {
   .desktop {
     display: none;
   }
@@ -102,11 +106,20 @@
     font-weight: 200;
     font-size: 20px;
     color: #fdad59;
-    width: calc(100% - 85px);
+    width: calc(100% - 145px);
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+  }
+  #golive{
+    float: right;
+    margin-right: 60px;
+    font-size: 18px;
+  }
+  #golive a{
+    color: #fdad59;
+    text-decoration: none;
   }
   .button_container {
     position: fixed;
@@ -291,7 +304,16 @@
 #logo img{
     max-height: 70px;
 }
-
+#menuOverlay nav ul{
+  width: calc(100% - 90px);
+  min-width: fit-content;
+}
+#menuOverlay nav li{
+  border-bottom: 2px solid white;
+}
+#menuOverlay nav li:first-child{
+  border-top: 2px solid white;
+}
 .customBell{
   font-size: 35px;
   color: #fdad59;
@@ -338,4 +360,25 @@
 #notifications h3{
     margin-left: 25%;
     margin-bottom: 20px;
+}
+.color-red{
+  color: red;
+}
+.color-green{
+  color: green;
+}
+@-webkit-keyframes animate-live {
+  0%   { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+.live-status{
+  width: 30px;
+  text-align: left;
+}
+.live-status.color-green{
+  -webkit-animation: animate-live 2s infinite; /* Safari 4+ */
+  -moz-animation:    animate-live 2s infinite; /* Fx 5+ */
+  -o-animation:      animate-live 2s infinite; /* Opera 12+ */
+  animation:         animate-live 2s infinite; /* IE 10+, Fx 29+ */
 }
