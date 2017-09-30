@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import * as jQuery from 'jquery';
+import {UpdateService} from './notification.service';
 
 @Component({
   selector: 'navbar',
@@ -11,7 +12,9 @@ export class NavbarComponent {
     Width; 
     Height;
 
-    constructor(){
+    notificationShow = false;
+
+    constructor(private _updateService: UpdateService){
         this.Width = window.screen.width;
         this.Height = window.screen.height;
     }
@@ -21,5 +24,12 @@ export class NavbarComponent {
       jQuery('.overlay').toggleClass('open');
       jQuery('body').toggleClass('active');
     };
+
+    notification(){
+      this.notificationShow = !this.notificationShow;
+      console.log('Button Pressed!!')
+    }
+
+    updates = this._updateService.getupdates();
 
 }
