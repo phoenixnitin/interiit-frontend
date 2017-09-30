@@ -315,6 +315,7 @@
     z-index: 0;
     background-color: #333333;
     color: white;
+    z-index: 100;
 }
   /* AN ARROW LIKE STRUCTURE JUST OVER THE NOTIFICATIONS WINDOW */
 #notifications:before {         
