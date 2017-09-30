@@ -8,7 +8,7 @@ import {NavbarComponent} from './navbar/navbar.component'
 import {HomeComponent} from './home/home.component';
 import {UpdateComponent} from './update/update.component';
 import {SportsComponent} from './sports/sports.component';
-import {UpdateService} from './update/update.service';
+import {UpdateService} from './navbar/notification.service';
 import {NotExistComponent} from './not_exist/not_exist.component';
 import {SportsAquaticsComponent} from './sports/aquatics/aquatics.component';
 import {GalleryComponent} from './gallery/gallery.component';
