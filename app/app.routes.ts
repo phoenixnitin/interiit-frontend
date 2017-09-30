@@ -10,6 +10,7 @@ import {MapComponent} from './map/map.component';
 import {ScheduleandResultComponent} from './scheduleandresult/scheduleandresult.component';
 import {EventComponent} from './events/events.component';
 import {SocialCampaignComponent} from './socialcampaign/socialcampaign';
+import {LiveComponent} from "./live/live.component";
 
 import {GALLERY_ROUTES} from './gallery/gallery.routes';
 import {CONTACTUS_ROUTES} from './contactus/contactus.routes';
@@ -27,6 +28,7 @@ const APP_ROUTES: Routes = [
     {path: 'scheduleandresults', component: ScheduleandResultComponent, children: SCHEDULEANDRESULT_ROUTES},
     {path: 'maps', component: MapComponent },
     {path: 'socialcampaign', component: SocialCampaignComponent },
+    {path: 'live', component: LiveComponent},
     {path: '**', component: NotExistComponent}
 ];
 

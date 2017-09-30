@@ -1,0 +1,8 @@
+.container{
+    position: relative;
+    top: 110px;
+    /*width: fit-content;*/
+    width: -moz-fit-content;
+    color: white;
+    text-align: center;
+}
