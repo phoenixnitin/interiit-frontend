@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Http} from '@angular/http';
+import {DomSanitizer} from '@angular/platform-browser';
 
 @Component({
     selector: 'app-live',
@@ -7,8 +8,16 @@ import {Http} from '@angular/http';
     styleUrls:['./app/assets/css/live.css']
 })
 
+//How this Works!!
+// There is a variable iframeSrc just put url in Live Data Sheet...
+// iframeSrc will update if those objects in data array have status as online....
+// Just add one more property for that object....Src.....
+//if object.Src that is Src property of that object is empty string then iframeSrc variable wont change...
+//also if object.Src is same as iframeSrc then it wont change....
+
 export class LiveComponent implements OnInit{
     data: Array<object>;
+    iframeSrc = "http://clappr.akamain.info:5698/Player.html?url=http://webtv.akamain.info:1935/7384/7384/playlist.m3u8";
     // status;
     // title;
     // participant;
@@ -17,7 +26,7 @@ export class LiveComponent implements OnInit{
     ngOnInit(){
       this.loadlive();
     };
-    constructor(private _http: Http){
+    constructor(public sanitizer: DomSanitizer ,private _http: Http){
       let that = this;
       jQuery(document).ready(function () {
         window.dataLayer = window.dataLayer || [];
@@ -37,6 +46,12 @@ export class LiveComponent implements OnInit{
                             .subscribe(res => {
                                 this.data = res.json().livedata;
                                 // console.log(this.data);
+                                this.data.forEach((object) => {
+                                  if(object.Status == "online" && this.iframeSrc!= object.Src && object.Src!=''){
+                                    this.iframeSrc = object.Src;
+                                  }
+                                  else return;
+                                });
                                 this.filldata(this.data);
                             });
     }
