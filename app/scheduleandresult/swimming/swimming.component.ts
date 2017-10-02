@@ -1,4 +1,5 @@
 import {Component, OnInit, AfterViewInit} from '@angular/core';
+import {Http} from '@angular/http';
 
 @Component({
     selector: 'app-swimming',
@@ -7,11 +8,23 @@ import {Component, OnInit, AfterViewInit} from '@angular/core';
 })
 
 export class SwimmingComponent implements OnInit, AfterViewInit{
-
-    constructor(){
+  men: Array<object>;
+  women: Array<object>;
+    constructor(private _http: Http){
 
     };
-    ngOnInit(){};
+    ngOnInit(){
+      let that = this;
+      this._http.get('https://script.google.com/macros/s/AKfycbygukdW3tt8sCPcFDlkMnMuNu9bH5fpt7bKV50p2bM/exec?id=1mtNOpZNsjM7Av4b-a8NIFNogscf24F4q3hwCpqCXWCo&sheet=Men')
+                            .subscribe(res => {
+                                this.men = res.json().Men;
+                                // console.log(this.men);
+                            });
+      this._http.get('https://script.google.com/macros/s/AKfycbygukdW3tt8sCPcFDlkMnMuNu9bH5fpt7bKV50p2bM/exec?id=1mtNOpZNsjM7Av4b-a8NIFNogscf24F4q3hwCpqCXWCo&sheet=Women')
+                            .subscribe(res => {
+                                this.women = res.json().Women;
+                            });
+    };
     ngAfterViewInit(){
         jQuery(document).ready(function () {
             framedimen();
@@ -21,17 +34,34 @@ export class SwimmingComponent implements OnInit, AfterViewInit{
             jQuery('#schedule').click(function () {
                 jQuery('.display-space nav').children().removeClass('active');
                 jQuery('.display-space iframe').attr('src','http://indiaatsports.com/widget_matches?tournamentid=6730339196076032');
-                jQuery('.display-space nav #schedule').addClass('active');
+                jQuery('#schedule').addClass('active');
+                jQuery('.table-container').addClass('hide');
+                jQuery('.display-space i').removeClass('hide');
+                jQuery('.display-space iframe').removeClass('hide');
             });
-            // jQuery('#pointstable').click(function () {
-            //     jQuery('.display-space nav').children().removeClass('active');
-            //     jQuery('.display-space iframe').attr('src','https://worldatsports.appspot.com/widget_pointstable?tournamentid=5541144758845440');
-            //     jQuery('.display-space nav #pointstable').addClass('active');
-            // });
+            jQuery('#men-pointstable').click(function () {
+                jQuery('.display-space nav').children().removeClass('active');
+                jQuery('.display-space iframe').addClass('hide');
+                jQuery('.display-space i').addClass('hide');
+                jQuery('#men-pointstable').addClass('active');
+                jQuery('.men-rows').removeClass('hide');
+                jQuery('.women-rows').addClass('hide');
+                jQuery('.table-container').removeClass('hide');
+            });
+            jQuery('#women-pointstable').click(function () {
+                jQuery('.display-space nav').children().removeClass('active');
+                jQuery('.display-space iframe').addClass('hide');
+                jQuery('.display-space i').addClass('hide');
+                jQuery('#women-pointstable').addClass('active');
+                jQuery('.women-rows').removeClass('hide');
+                jQuery('.men-rows').addClass('hide');
+                jQuery('.table-container').removeClass('hide');
+            });
             function framedimen() {
                 var window_height = jQuery(document).height();
                 var heading_height = jQuery('.display-space h2').height();
                 var nav_height = jQuery('.display-space nav').height();
+                jQuery('.display-space i').removeClass('hide');
                 jQuery('.display-space iframe').attr('height', window_height - heading_height - nav_height - 150);
                 jQuery('.display-space nav #schedule').addClass('active');
             }

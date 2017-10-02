@@ -39,6 +39,7 @@ body{
     margin-top: 115px;
     width: 100%;
     padding: 0px 40px;
+    margin-bottom: 20px;
 }
 .display-space > i{
     position: absolute;
@@ -97,3 +98,38 @@ button{
     background-blend-mode: darken;
     text-shadow: 0px 0px 1px;
 }
+
+/*-----------table-----------*/
+/*.table-container{*/
+  /*width: 100%;*/
+  /*border: 2px solid;*/
+/*}*/
+table{
+  width: 100%;
+  /*margin: 15px;*/
+  /*text-align: center;*/
+  /*border: 2px solid;*/
+  color: white;
+}
+th, td{
+  text-align: center;
+  vertical-align: middle !important;
+}
+th{
+  background-color: #62c0ee;
+  color: #202020;
+}
+.men-rows, .women-rows{
+  background-color: #202020;
+  color: #62c0ee;
+}
+.men-rows:hover, .women-rows:hover{
+  background-color: #616161;
+}
+tbody{
+  padding:5px;
+}
+.iit_name img{
+  height:26px;
+}
+/*-----------table-----------*/
