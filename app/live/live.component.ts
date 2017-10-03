@@ -32,11 +32,11 @@ export class LiveComponent implements OnInit{
     constructor(public sanitizer: DomSanitizer ,private _http: Http){
       let that = this;
       jQuery(document).ready(function () {
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-74140602-1');
+        // window.dataLayer = window.dataLayer || [];
+        // function gtag(){dataLayer.push(arguments);}
+        // gtag('js', new Date());
+        //
+        // gtag('config', 'UA-74140602-1');
         // that.loadlive();
         window.setInterval(function () {
           that.loadlive();
@@ -48,14 +48,14 @@ export class LiveComponent implements OnInit{
       this._http.get('https://script.google.com/macros/s/AKfycbygukdW3tt8sCPcFDlkMnMuNu9bH5fpt7bKV50p2bM/exec?id=1aqljoEV1kLxP8ZtzsW3Cqj8-L72Q79trNJcsNM5B_Lo&sheet=livedata')
                             .subscribe(res => {
                                 this.data = res.json().livedata;
-                                // console.log(this.data);
+                                // console.log(this.data[1]);
                                 // this.data.forEach((object) => {
-                                  if(this.data[0].Status == "online" && this.iframeObj != this.data[0].iframeObj){
-                                    this.iframeObj = this.data[0].iframeObj;
-                                    if(this.iframeObj != this.iframeObjPre)
-                                      jQuery('#iframe-object').html(this.data[0].iframeObj);
-                                    this.iframeObjPre = this.iframeObj;
-                                  }
+                                //   if(this.data[0].Status == "online" && this.iframeObj != this.data[0].iframeObj){
+                                //     this.iframeObj = this.data[0].iframeObj;
+                                //     if(this.iframeObj != this.iframeObjPre)
+                                //       jQuery('#iframe-object').html(this.data[0].iframeObj);
+                                //     this.iframeObjPre = this.iframeObj;
+                                //   }
                                   // else return;
                                 // });
                                 this.filldata(this.data[0]);
@@ -73,7 +73,7 @@ export class LiveComponent implements OnInit{
       else{
         jQuery('#iframe-container').addClass('hide');
         jQuery('#livecontainer-alt').removeClass('hide');
-        jQuery('#iframe-object').remove();
+        // jQuery('#iframe-object').remove();
         if(data.showText == 'on'){
           jQuery('#title h2').html(data.SportName);
           jQuery('#participant h2').html(data.Participant);
