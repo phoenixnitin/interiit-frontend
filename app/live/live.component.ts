@@ -71,7 +71,7 @@ export class LiveComponent implements OnInit{
         jQuery('#livecontainer').removeClass('hide');
       }
       else{
-        jQuery('#iframe-container').addClass('hide');
+        // jQuery('#iframe-container').addClass('hide');
         jQuery('#livecontainer-alt').removeClass('hide');
         // jQuery('#iframe-object').remove();
         if(data.showText == 'on'){

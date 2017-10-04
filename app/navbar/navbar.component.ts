@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import * as jQuery from 'jquery';
 import {UpdateService} from './notification.service';
 import {Http} from '@angular/http';
-import {win} from "@angular/platform-browser/src/facade/browser";
+// import {win} from "@angular/platform-browser/src/facade/browser";
 
 @Component({
   selector: 'navbar',
