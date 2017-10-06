@@ -1,6 +1,7 @@
 .container{
     position: relative;
     top: 150px;
+    min-width: 320px;
 }
 #gallery-nav{
     text-align: center;

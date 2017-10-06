@@ -39,6 +39,14 @@ export class SwimmingComponent implements OnInit, AfterViewInit{
                 jQuery('.display-space i').removeClass('hide');
                 jQuery('.display-space iframe').removeClass('hide');
             });
+            jQuery('#participants').click(function () {
+                jQuery('.display-space nav').children().removeClass('active');
+                jQuery('.display-space iframe').attr('src','http://indiaatsports.com/widget_participants?tournamentid=6730339196076032');
+                jQuery('#participants').addClass('active');
+                jQuery('.table-container').addClass('hide');
+                jQuery('.display-space i').removeClass('hide');
+                jQuery('.display-space iframe').removeClass('hide');
+            });
             jQuery('#men-pointstable').click(function () {
                 jQuery('.display-space nav').children().removeClass('active');
                 jQuery('.display-space iframe').addClass('hide');
