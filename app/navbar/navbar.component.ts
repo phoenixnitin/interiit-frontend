@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import * as jQuery from 'jquery';
+// import * as jQuery from 'jquery';
 import {UpdateService} from './notification.service';
 import {Http} from '@angular/http';
-// import {win} from "@angular/platform-browser/src/facade/browser";
+// import {window} from "@angular/platform-browser/src/facade/browser";
 
 @Component({
   selector: 'navbar',
@@ -34,12 +34,12 @@ export class NavbarComponent {
       jQuery('body').toggleClass('active');
     };
 
-    // notification(){
-    //   this.notificationShow = !this.notificationShow;
-    //   console.log('Button Pressed!!')
-    // }
+    notification(){
+      this.notificationShow = !this.notificationShow;
+      console.log('Button Pressed!!')
+    }
 
-    // updates = this._updateService.getupdates();
+    updates = this._updateService.getupdates();
 
   loadlive(){
       this._http.get('https://script.google.com/macros/s/AKfycbygukdW3tt8sCPcFDlkMnMuNu9bH5fpt7bKV50p2bM/exec?id=1aqljoEV1kLxP8ZtzsW3Cqj8-L72Q79trNJcsNM5B_Lo&sheet=livedata')

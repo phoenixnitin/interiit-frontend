@@ -3,14 +3,14 @@ export class UpdateService{
     getupdates() : [{}] {
         return [
             {id: 1,
-             name: 'Aquatics Meet Form : Men',
-             date: '13-09-17',
-             link: 'http://server.interiit.com/sport/aquatics/men/'
+             name: 'Aquatics Meet Result: Water Polo',
+             date: '05-10-17',
+             link: 'http://www.interiit.com/scheduleandresults/waterpolo'
             },
             {id: 2,
-             name: 'Aquatics Meet Form : Women',
-             date: '13-09-17',
-             link: 'http://server.interiit.com/sport/aquatics/women/'
+             name: 'Aquatics Meet Result : Swimming',
+             date: '05-10-17',
+             link: 'http://www.interiit.com/scheduleandresults/swimming'
             }
         ]
     }

@@ -25,9 +25,9 @@
           <a [routerLink]="['/live']"><i class="fa fa-circle color-red live-status" aria-hidden="true"></i>Live</a>
         </div>
       
-      <!--<div id="notificationBell">-->
-        <!--<i class="ion-ios-bell customBell" (click)="notification()"></i>-->
-      <!--</div>-->
+      <div id="notificationBell">
+        <i class="ion-ios-bell customBell" (click)="notification()"></i>
+      </div>
 
       <div id="menuButton" (click)="toggleMenu()" class="button_container">
         <span class="top"></span>
@@ -38,37 +38,37 @@
 
     <div id="menuOverlay" class="overlay all-heading">
       <nav>
-      <ul>
-        <li (click)="toggleMenu()"><a [routerLink]="['/home']">Home</a></li>
-        <!--<li (click)="toggleMenu()"><a [routerLink]="['/sports']">Sports</a></li>-->
-        <li (click)="toggleMenu()"><a [routerLink]="['/gallery']">Gallery</a>
-        <li (click)="toggleMenu()"><a [routerLink]="['/events']">Events</a>
-        <li (click)="toggleMenu()"><a [routerLink]="['/socialcampaign']">Social Campaign</a>
-        <!--<li (click)="toggleMenu()"><a [routerLink]="['/sponsorship']">Sponsorship</a></li>-->
-        <li (click)="toggleMenu()"><a [routerLink]="['/scheduleandresults']">Schedule and Results</a></li>
-        <li (click)="toggleMenu()"><a [routerLink]="['/contactus']">Contacts</a></li>
-        <li (click)="toggleMenu()"><a [routerLink]="['/maps']">Maps</a></li>
-      </ul>
+        <ul>
+          <li (click)="toggleMenu()"><a [routerLink]="['/home']">Home</a></li>
+          <!--<li (click)="toggleMenu()"><a [routerLink]="['/sports']">Sports</a></li>-->
+          <li (click)="toggleMenu()"><a [routerLink]="['/gallery']">Gallery</a>
+          <li (click)="toggleMenu()"><a [routerLink]="['/events']">Events</a>
+          <li (click)="toggleMenu()"><a [routerLink]="['/socialcampaign']">Social Campaign</a>
+          <!--<li (click)="toggleMenu()"><a [routerLink]="['/sponsorship']">Sponsorship</a></li>-->
+          <li (click)="toggleMenu()"><a [routerLink]="['/scheduleandresults']">Schedule and Results</a></li>
+          <li (click)="toggleMenu()"><a [routerLink]="['/contactus']">Contacts</a></li>
+          <li (click)="toggleMenu()"><a [routerLink]="['/maps']">Maps</a></li>
+        </ul>
       </nav>
     </div>
   </span>
 
 <!--Notification-->
 
-<!--<div id="notifications" *ngIf="notificationShow">-->
-        <!---->
-    <!--<h3>Notifications</h3>-->
-        <!---->
+<div id="notifications" *ngIf="notificationShow">
+        
+    <h3>Notifications</h3>
+        
 
-  <!--<div class="list-group">-->
-    <!--<a [href]="update.link"-->
-        <!--class="list-group-item"-->
-        <!--*ngFor="let update of updates"-->
-        <!--style="background-color: #333333; color: white;"-->
-        <!--&gt;-->
-        <!--{{update.name}}-->
-        <!--<span class="badge">{{update.date}}</span>-->
-    <!--</a>-->
-    <!---->
-  <!--</div>-->
-<!--</div>-->
+  <div class="list-group">
+    <a [href]="update.link"
+        class="list-group-item"
+        *ngFor="let update of updates"
+        style="background-color: #333333; color: white;"
+    >
+        {{update.name}}
+        <span class="badge">{{update.date}}</span>
+    </a>
+    
+  </div>
+</div>
