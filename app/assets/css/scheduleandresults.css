@@ -39,7 +39,6 @@ body{
     margin-top: 115px;
     width: 100%;
     padding: 0px 40px;
-    margin-bottom: 20px;
 }
 .display-space > i{
     position: absolute;
@@ -99,37 +98,112 @@ button{
     text-shadow: 0px 0px 1px;
 }
 
-/*-----------table-----------*/
-/*.table-container{*/
-  /*width: 100%;*/
-  /*border: 2px solid;*/
-/*}*/
-table{
-  width: 100%;
-  /*margin: 15px;*/
-  /*text-align: center;*/
-  /*border: 2px solid;*/
-  color: white;
+.athletics-btn{
+    background: url(./app/assets/icons/athletics.png);
+    background-position: center;
+    background-size: contain;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    text-shadow: 0px 0px 1px;
 }
-th, td{
-  text-align: center;
-  vertical-align: middle !important;
+
+.badminton-btn{
+    background: url(./app/assets/icons/badm.png);
+    background-position: center;
+    background-size: contain;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    text-shadow: 0px 0px 1px;
 }
-th{
-  background-color: #62c0ee;
-  color: #202020;
+
+.basketball-btn{
+    background: url(./app/assets/icons/bask.png);
+    background-position: center;
+    background-size: contain;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    text-shadow: 0px 0px 1px;
 }
-.men-rows, .women-rows{
-  background-color: #202020;
-  color: #62c0ee;
+
+.cricket-btn{
+    background: url(./app/assets/icons/cri.png);
+    background-position: center;
+    background-size: contain;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    text-shadow: 0px 0px 1px;
 }
-.men-rows:hover, .women-rows:hover{
-  background-color: #616161;
+
+.football-btn{
+    background: url(./app/assets/icons/foot.png);
+    background-position: center;
+    background-size: contain;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    text-shadow: 0px 0px 1px;
 }
-tbody{
-  padding:5px;
+
+.hockey-btn{
+    background: url(./app/assets/icons/hock.png);
+    background-position: center;
+    background-size: contain;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    text-shadow: 0px 0px 1px;
 }
-.iit_name img{
-  height:26px;
+
+.squash-btn{
+    background: url(./app/assets/icons/squa.png);
+    background-position: center;
+    background-size: contain;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    text-shadow: 0px 0px 1px;
 }
-/*-----------table-----------*/
+
+.tennis-btn{
+    background: url(./app/assets/icons/tenn.png);
+    background-position: center;
+    background-size: contain;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    text-shadow: 0px 0px 1px;
+}
+
+.tabletennis-btn{
+    background: url(./app/assets/icons/tt.png);
+    background-position: center;
+    background-size: contain;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    text-shadow: 0px 0px 1px;
+}
+
+.volleyball-btn{
+    background: url(./app/assets/icons/volley.png);
+    background-position: center;
+    background-size: contain;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    text-shadow: 0px 0px 1px;
+}
+
+.weightlifting-btn{
+    background: url(./app/assets/icons/weight.png);
+    background-position: center;
+    background-size: contain;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    text-shadow: 0px 0px 1px;
+}
