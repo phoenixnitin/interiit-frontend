@@ -87,6 +87,9 @@ button{
     background-blend-mode: darken !important;
     text-shadow: 0px 0px 1px !important;
 }
+.all-button:focus{
+  outline: none;
+}
 .waterpolo-btn{
     background: url(./app/assets/icons/waterpolo.png);
 
