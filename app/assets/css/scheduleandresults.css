@@ -78,132 +78,64 @@ button{
 .card{
     margin-bottom: 50px;
 }
+.all-button{
+    background-position: center !important;
+    background-size: contain !important;
+    height: 222px !important;
+    width: 222px;
+    background-repeat: no-repeat !important;
+    background-blend-mode: darken !important;
+    text-shadow: 0px 0px 1px !important;
+}
 .waterpolo-btn{
     background: url(./app/assets/icons/waterpolo.png);
-    background-position: center;
-    background-size: contain;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-blend-mode: darken;
-    text-shadow: 0px 0px 1px;
+
 }
 
 .swimming-btn{
     background: url(./app/assets/icons/swim.png);
-    background-position: center;
-    background-size: contain;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-blend-mode: darken;
-    text-shadow: 0px 0px 1px;
 }
 
 .athletics-btn{
     background: url(./app/assets/icons/athletics.png);
-    background-position: center;
-    background-size: contain;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-blend-mode: darken;
-    text-shadow: 0px 0px 1px;
 }
 
 .badminton-btn{
     background: url(./app/assets/icons/badm.png);
-    background-position: center;
-    background-size: contain;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-blend-mode: darken;
-    text-shadow: 0px 0px 1px;
 }
 
 .basketball-btn{
     background: url(./app/assets/icons/bask.png);
-    background-position: center;
-    background-size: contain;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-blend-mode: darken;
-    text-shadow: 0px 0px 1px;
 }
 
 .cricket-btn{
     background: url(./app/assets/icons/cri.png);
-    background-position: center;
-    background-size: contain;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-blend-mode: darken;
-    text-shadow: 0px 0px 1px;
 }
 
 .football-btn{
     background: url(./app/assets/icons/foot.png);
-    background-position: center;
-    background-size: contain;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-blend-mode: darken;
-    text-shadow: 0px 0px 1px;
 }
 
 .hockey-btn{
     background: url(./app/assets/icons/hock.png);
-    background-position: center;
-    background-size: contain;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-blend-mode: darken;
-    text-shadow: 0px 0px 1px;
 }
 
 .squash-btn{
     background: url(./app/assets/icons/squa.png);
-    background-position: center;
-    background-size: contain;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-blend-mode: darken;
-    text-shadow: 0px 0px 1px;
 }
 
 .tennis-btn{
     background: url(./app/assets/icons/tenn.png);
-    background-position: center;
-    background-size: contain;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-blend-mode: darken;
-    text-shadow: 0px 0px 1px;
 }
 
 .tabletennis-btn{
     background: url(./app/assets/icons/tt.png);
-    background-position: center;
-    background-size: contain;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-blend-mode: darken;
-    text-shadow: 0px 0px 1px;
 }
 
 .volleyball-btn{
     background: url(./app/assets/icons/volley.png);
-    background-position: center;
-    background-size: contain;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-blend-mode: darken;
-    text-shadow: 0px 0px 1px;
 }
 
 .weightlifting-btn{
     background: url(./app/assets/icons/weight.png);
-    background-position: center;
-    background-size: contain;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-blend-mode: darken;
-    text-shadow: 0px 0px 1px;
 }

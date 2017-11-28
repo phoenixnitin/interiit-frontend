@@ -10,6 +10,7 @@ import {UpdateComponent} from './update/update.component';
 import {SportsComponent} from './sports/sports.component';
 import {UpdateService} from './navbar/notification.service';
 import {NotExistComponent} from './not_exist/not_exist.component';
+import {UpdateSoonComponent} from './updated_soon/update_soon.component';
 import {SportsAquaticsComponent} from './sports/aquatics/aquatics.component';
 import {GalleryComponent} from './gallery/gallery.component';
 import {ImageGalleryComponent} from './gallery/ImageGallery/image.gallery.component';
@@ -42,6 +43,7 @@ import {routerModule} from './app.routes';
      SportsComponent,
      NavbarComponent,
      NotExistComponent,
+     UpdateSoonComponent,
      SportsAquaticsComponent,
      GalleryComponent,
      ImageGalleryComponent,
