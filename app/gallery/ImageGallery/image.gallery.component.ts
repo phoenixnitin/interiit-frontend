@@ -10,6 +10,7 @@ import 'rxjs/add/operator/map';
 
 export class ImageGalleryComponent implements OnInit{
 imageArray;
+imageCounter= 20;
     constructor(private _http : Http){
 
     }
