@@ -17,6 +17,17 @@ import {ImageGalleryComponent} from './gallery/ImageGallery/image.gallery.compon
 import {VideoGalleryComponent} from './gallery/VideoGallery/video.gallery.component';
 import {ScheduleandResultComponent} from './scheduleandresult/scheduleandresult.component';
 import {RootComponent} from './scheduleandresult/root/root.component';
+import {AthleticsComponent} from './scheduleandresult/athletics/athletics.component';
+import {BadmintonComponent} from './scheduleandresult/badminton/badminton.component';
+import {BasketBallComponent} from './scheduleandresult/basketball/basketball.component';
+import {CricketComponent} from './scheduleandresult/cricket/cricket.component';
+import {FootBallComponent} from './scheduleandresult/football/football.component';
+import {HockeyComponent} from './scheduleandresult/hockey/hockey.component';
+import {SquashComponent} from './scheduleandresult/squash/squash.component';
+import {TableTennisComponent} from './scheduleandresult/tabletennis/tabletennis.component';
+import {TennisComponent} from './scheduleandresult/tennis/tennis.component';
+import {VolleyBallComponent} from './scheduleandresult/volleyball/volleyball.component';
+import {WeightLiftingComponent} from './scheduleandresult/weightlifting/weightlifting.component';
 import {WaterPoloComponent} from './scheduleandresult/waterpolo/waterpolo.component';
 import {SwimmingComponent} from './scheduleandresult/swimming/swimming.component';
 import {ContactCoreComponent} from './contactus/cores/core.component';
@@ -50,6 +61,17 @@ import {routerModule} from './app.routes';
      VideoGalleryComponent,
      ScheduleandResultComponent,
      RootComponent,
+     AthleticsComponent,
+     BadmintonComponent,
+     BasketBallComponent,
+     CricketComponent,
+     FootBallComponent,
+     HockeyComponent,
+     SquashComponent,
+     TableTennisComponent,
+     TennisComponent,
+     VolleyBallComponent,
+     WeightLiftingComponent,
      WaterPoloComponent,
      SwimmingComponent,
      ContactCoreComponent,
