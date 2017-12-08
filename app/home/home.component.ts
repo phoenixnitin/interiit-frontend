@@ -57,11 +57,12 @@ mouseclick() {
     }, 800);
   };
 
+    showCountdown = true;
     days;
     hours;
     minutes;
     seconds;
-    countDownDate = new Date("Dec 15, 2017 00:00:00").getTime();
+    countDownDate = new Date("Dec 8, 2017 18:19:40").getTime();
 
 // Update the count down every 1 second
     x = setInterval(() => {
@@ -93,7 +94,11 @@ mouseclick() {
     // If the count down is over, write some text
     if (distance < 0) {
         clearInterval(this.x);
+        this.showCountdown = false;
         document.getElementById("countdown").innerHTML = "";
+    }
+    else{
+      jQuery('#countdown').removeClass('hide');
     }
 }, 1000);
 }
