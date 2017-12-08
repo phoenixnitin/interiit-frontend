@@ -11,6 +11,7 @@ import 'rxjs/add/operator/map';
 export class ImageGalleryComponent implements OnInit{
 imageArray;
 imageCounter= 20;
+showClick = true;
     constructor(private _http : Http){
 
     }
@@ -36,6 +37,12 @@ imageCounter= 20;
                                         });
                                     });
                                 });
+    }
+    clickMore(){
+      this.imageCounter = this.imageCounter + 20;
+      if(this.imageCounter > this.imageArray.length){
+        this.showClick = false;
+      }
     }
 
 }
