@@ -20,17 +20,17 @@ export class CricketComponent implements OnInit, AfterViewInit{
             });
             jQuery('#schedule').click(function () {
                 jQuery('.display-space nav').children().removeClass('active');
-                jQuery('.display-space iframe').attr('src','https://worldatsports.appspot.com/widget_matches?tournamentid=6294869374926848');
+                jQuery('.display-space iframe').attr('src','http://indiaatsports.com/widget_matches?tournamentid=6294869374926848');
                 jQuery('#schedule').addClass('active');
             });
             jQuery('#pointstable').click(function () {
                 jQuery('.display-space nav').children().removeClass('active');
-                jQuery('.display-space iframe').attr('src','https://worldatsports.appspot.com/widget_pointstable?tournamentid=6294869374926848');
+                jQuery('.display-space iframe').attr('src','http://indiaatsports.com/widget_pointstable?tournamentid=6294869374926848');
                 jQuery('#pointstable').addClass('active');
             });
             jQuery('#participants').click(function () {
                 jQuery('.display-space nav').children().removeClass('active');
-                jQuery('.display-space iframe').attr('src','https://worldatsports.appspot.com/widget_participants?tournamentid=6294869374926848');
+                jQuery('.display-space iframe').attr('src','http://indiaatsports.com/widget_participants?tournamentid=6294869374926848');
                 jQuery('#participants').addClass('active');
             });
             function framedimen() {

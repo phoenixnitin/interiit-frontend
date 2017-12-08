@@ -20,7 +20,7 @@ export class AthleticsComponent implements OnInit, AfterViewInit{
             });
             jQuery('#schedule').click(function () {
                 jQuery('.display-space nav').children().removeClass('active');
-                jQuery('.display-space iframe').attr('src','https://worldatsports.appspot.com/widget_matches?tournamentid=5540827736571904');
+                jQuery('.display-space iframe').attr('src','http://indiaatsports.com/widget_matches?tournamentid=5540827736571904');
                 jQuery('#schedule').addClass('active');
             });
             jQuery('#pointstable').click(function () {
@@ -30,7 +30,7 @@ export class AthleticsComponent implements OnInit, AfterViewInit{
             });
             jQuery('#participants').click(function () {
                 jQuery('.display-space nav').children().removeClass('active');
-                jQuery('.display-space iframe').attr('src','https://worldatsports.appspot.com/widget_participants?tournamentid=5540827736571904');
+                jQuery('.display-space iframe').attr('src','http://indiaatsports.com/widget_participants?tournamentid=5540827736571904');
                 jQuery('#participants').addClass('active');
             });
             function framedimen() {
