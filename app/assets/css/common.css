@@ -5,3 +5,6 @@
 .nav-buttons{
   margin-top: 10px;
 }
+.display-space iframe{
+  border: 0px;
+}

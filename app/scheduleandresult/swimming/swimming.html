@@ -3,39 +3,39 @@
         <h2 class="heading all-heading">Swimming</h2>
         <nav>
             <button id="schedule" class="btn btn-default nav-buttons">Schedule</button>
-            <button id="men-pointstable" class="btn btn-default nav-buttons">Men Points Table</button>
-            <button id="women-pointstable" class="btn btn-default nav-buttons">Women Points Table</button>
+            <button id="pointstable" class="btn btn-default nav-buttons">Points Table</button>
+            <!--<button id="women-pointstable" class="btn btn-default nav-buttons">Women Points Table</button>-->
             <button id="participants" class="btn btn-default nav-buttons">Participants</button>
         </nav>
         <i class="fa fa-spinner fa-pulse fa-4x fa-fw"></i>
         <iframe src="http://indiaatsports.com/widget_matches?tournamentid=6730339196076032" width="100%" height="-webkit-fill-available;"></iframe>
-      <div class="table-container hide">
-      <table class="table table-bordered table-hover">
-          <tr>
-            <th class="iit_name">IIT</th>
-            <th class="gold">Gold</th>
-            <th class="silver">Silver</th>
-            <th class="bronze">Bronze</th>
-            <th class="forth">Fourth</th>
-            <th class="points">Points</th>
-          </tr>
-          <tr class="men-rows" *ngFor="let row of men">
-            <td class="iit_name"><img src="{{row.logoUrl}}"><br>{{row.IIT}}</td>
-            <td class="gold">{{row.Gold}}</td>
-            <td class="silver">{{row.Silver}}</td>
-            <td class="bronze">{{row.Bronze}}</td>
-            <td class="forth">{{row.Fourth}}</td>
-            <td class="points">{{row.Points}}</td>
-          </tr>
-          <tr class="women-rows" *ngFor="let row of women">
-            <td class="iit_name"><img src="{{row.logoUrl}}"><br>{{row.IIT}}</td>
-            <td class="gold">{{row.Gold}}</td>
-            <td class="silver">{{row.Silver}}</td>
-            <td class="bronze">{{row.Bronze}}</td>
-            <td class="forth">{{row.Fourth}}</td>
-            <td class="points">{{row.Points}}</td>
-          </tr>
-        </table>
-      </div>
+      <!--<div class="table-container hide">-->
+      <!--<table class="table table-bordered table-hover">-->
+          <!--<tr>-->
+            <!--<th class="iit_name">IIT</th>-->
+            <!--<th class="gold">Gold</th>-->
+            <!--<th class="silver">Silver</th>-->
+            <!--<th class="bronze">Bronze</th>-->
+            <!--<th class="forth">Fourth</th>-->
+            <!--<th class="points">Points</th>-->
+          <!--</tr>-->
+          <!--<tr class="men-rows" *ngFor="let row of men">-->
+            <!--<td class="iit_name"><img src="{{row.logoUrl}}"><br>{{row.IIT}}</td>-->
+            <!--<td class="gold">{{row.Gold}}</td>-->
+            <!--<td class="silver">{{row.Silver}}</td>-->
+            <!--<td class="bronze">{{row.Bronze}}</td>-->
+            <!--<td class="forth">{{row.Fourth}}</td>-->
+            <!--<td class="points">{{row.Points}}</td>-->
+          <!--</tr>-->
+          <!--<tr class="women-rows" *ngFor="let row of women">-->
+            <!--<td class="iit_name"><img src="{{row.logoUrl}}"><br>{{row.IIT}}</td>-->
+            <!--<td class="gold">{{row.Gold}}</td>-->
+            <!--<td class="silver">{{row.Silver}}</td>-->
+            <!--<td class="bronze">{{row.Bronze}}</td>-->
+            <!--<td class="forth">{{row.Fourth}}</td>-->
+            <!--<td class="points">{{row.Points}}</td>-->
+          <!--</tr>-->
+        <!--</table>-->
+      <!--</div>-->
     </div>
 </div>

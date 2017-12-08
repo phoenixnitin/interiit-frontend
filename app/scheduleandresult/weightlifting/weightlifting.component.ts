@@ -25,7 +25,7 @@ export class WeightLiftingComponent implements OnInit, AfterViewInit{
             });
             jQuery('#pointstable').click(function () {
                 jQuery('.display-space nav').children().removeClass('active');
-                jQuery('.display-space iframe').attr('src','http://indiaatsports.com/widget_pointstable?tournamentid=5130853881479168');
+                jQuery('.display-space iframe').attr('src','http://static.interiit.com/pages/weightlifting_points_table.html');
                 jQuery('#pointstable').addClass('active');
             });
             jQuery('#participants').click(function () {

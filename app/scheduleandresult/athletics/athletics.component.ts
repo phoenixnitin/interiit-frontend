@@ -25,7 +25,7 @@ export class AthleticsComponent implements OnInit, AfterViewInit{
             });
             jQuery('#pointstable').click(function () {
                 jQuery('.display-space nav').children().removeClass('active');
-                jQuery('.display-space iframe').attr('src','');
+                jQuery('.display-space iframe').attr('src','http://static.interiit.com/pages/athletics_points_table.html');
                 jQuery('#pointstable').addClass('active');
             });
             jQuery('#participants').click(function () {
