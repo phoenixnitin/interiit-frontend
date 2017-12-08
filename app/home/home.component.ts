@@ -62,7 +62,7 @@ mouseclick() {
     hours;
     minutes;
     seconds;
-    countDownDate = new Date("Dec 8, 2017 18:19:40").getTime();
+    countDownDate = new Date("Dec 15, 2017 00:00:00").getTime();
 
 // Update the count down every 1 second
     x = setInterval(() => {
