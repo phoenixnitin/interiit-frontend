@@ -32,23 +32,23 @@ delay = 650;
                             this.one.nativeElement.style.top = '100%';
                         }, this.delay * 5);
 
-                        setTimeout(() => {
-                            this.two.nativeElement.style.top = '50%';
-                        }, this.delay * 6);
-                        setTimeout(() => {
-                            this.two.nativeElement.style.top = '100%';
-                        }, this.delay * 11);
+                        // setTimeout(() => {
+                        //     this.two.nativeElement.style.top = '50%';
+                        // }, this.delay * 6);
+                        // setTimeout(() => {
+                        //     this.two.nativeElement.style.top = '100%';
+                        // }, this.delay * 11);
 
                         setTimeout(() => {
                             this.three.nativeElement.style.top = '50%';
-                        }, this.delay * 12);
+                        }, this.delay * 6);
                         setTimeout(() => {
                             this.three.nativeElement.style.top = '100%';
-                        }, this.delay * 17);
+                        }, this.delay * 11);
                     };
                         animation();
-                        setInterval(animation, this.delay * 18);
-            },900);
+                        setInterval(animation, this.delay * 11);
+            },600);
     };
 
 mouseclick() {
