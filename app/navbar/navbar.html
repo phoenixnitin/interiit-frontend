@@ -4,6 +4,7 @@
       <span id="logo" class="col-xs-12 col-sm-12 col-lg-6"><a [routerLink]="['/home']"><img src="./app/assets/interiit_logo_main.png"></a>52ND INTER IIT SPORTS MEET</span>
       <nav class="col-xs-12 col-sm-12 col-lg-6">
         <a [routerLink]="['/live']"><i class="fa fa-circle color-red live-status" aria-hidden="true"></i>Live</a>
+        <a style="top:6px;" [routerLink]="['/notifications']"><i class="ion-ios-bell customBell" aria-hidden="true"></i></a>
         <a [routerLink]="['/home']">Home</a>
         <!--<a [routerLink]="['/sports']">Sports</a>-->
         <a [routerLink]="['/gallery']">Gallery</a>
@@ -25,9 +26,9 @@
           <a [routerLink]="['/live']"><i class="fa fa-circle color-red live-status" aria-hidden="true"></i>Live</a>
         </div>
       
-      <!--<div id="notificationBell">-->
-        <!--<i class="ion-ios-bell customBell" (click)="notification()"></i>-->
-      <!--</div>-->
+      <div id="notificationBell">
+        <a [routerLink]="['/notifications']"><i class="ion-ios-bell customBell"></i></a>
+      </div>
 
       <div id="menuButton" (click)="toggleMenu()" class="button_container">
         <span class="top"></span>

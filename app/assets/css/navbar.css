@@ -1,7 +1,7 @@
 
 /*Desktop navigation*/
 
-@media screen and (min-width: 1570px) {
+@media screen and (min-width: 1580px) {
   .mobile {
     display: none;
   }
@@ -57,6 +57,14 @@
     background: rgb(31, 32, 39);
     border-bottom: 1px solid rgb(46, 48, 56);
   }
+  .customBell{
+        font-size: 35px;
+        color: #fdad59;
+        /*position: fixed;*/
+        /*right: 80px;*/
+        /*top: 18px;*/
+        cursor: pointer;
+    }
 }
 
 
@@ -65,7 +73,7 @@
 
 /*Mobile*/
 
-@media screen and (max-width: 1569px) {
+@media screen and (max-width: 1579px) {
   .desktop {
     display: none;
   }
@@ -124,6 +132,14 @@
     color: #fdad59;
     text-decoration: none;
   }
+  .customBell{
+        font-size: 35px;
+        color: #fdad59;
+        position: fixed;
+        right: 80px;
+        top: 18px;
+        cursor: pointer;
+    }
   .button_container {
     position: fixed;
     width: 30px;
@@ -320,15 +336,6 @@
 
 @media only screen and (min-width: 750px){
     
-    .customBell{
-        font-size: 35px;
-        color: #fdad59;
-        position: fixed;
-        right: 80px;
-        top: 18px;
-        cursor: pointer;
-    }
-    
     #notifications {
         display: inline-block;
         /*width:430px;*/
@@ -372,11 +379,11 @@
 @media only screen and (max-width: 750px){
 
     #golive{
-      margin-right: 70px;
+      margin-right: 118px;
     }
 
     #logo{
-      width: calc(100% - 151px);
+      width: calc(100% - 201px);
     }
 
 }

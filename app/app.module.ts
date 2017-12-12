@@ -7,6 +7,7 @@ import {ContactUsComponent} from './contactus/contactus.component';
 import {NavbarComponent} from './navbar/navbar.component'
 import {HomeComponent} from './home/home.component';
 import {UpdateComponent} from './update/update.component';
+import {NotificationComponent} from './notifications/notification.component';
 import {SportsComponent} from './sports/sports.component';
 import {UpdateService} from './navbar/notification.service';
 import {NotExistComponent} from './not_exist/not_exist.component';
@@ -51,6 +52,7 @@ import {routerModule} from './app.routes';
      ContactUsComponent,
      HomeComponent,
      UpdateComponent,
+     NotificationComponent,
      SportsComponent,
      NavbarComponent,
      NotExistComponent,
