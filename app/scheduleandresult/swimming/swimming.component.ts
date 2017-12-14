@@ -13,6 +13,10 @@ export class SwimmingComponent implements OnInit, AfterViewInit{
     constructor(private _http: Http){
 
     };
+    showIframe(){
+      jQuery('.display-space iframe').removeClass('hide');
+      jQuery('.display-space i').addClass('hide');
+    };
     ngOnInit(){
       let that = this;
       this._http.get('https://script.google.com/macros/s/AKfycbygukdW3tt8sCPcFDlkMnMuNu9bH5fpt7bKV50p2bM/exec?id=1mtNOpZNsjM7Av4b-a8NIFNogscf24F4q3hwCpqCXWCo&sheet=Men')
@@ -48,19 +52,25 @@ export class SwimmingComponent implements OnInit, AfterViewInit{
             //     jQuery('.display-space iframe').removeClass('hide');
             // });
             jQuery('#schedule').click(function () {
+                jQuery('.display-space iframe').addClass('hide');
                 jQuery('.display-space nav').children().removeClass('active');
                 jQuery('.display-space iframe').attr('src','http://indiaatsports.com/widget_matches?tournamentid=6730339196076032');
                 jQuery('#schedule').addClass('active');
+                jQuery('.display-space i').removeClass('hide');
             });
             jQuery('#participants').click(function () {
+                jQuery('.display-space iframe').addClass('hide');
                 jQuery('.display-space nav').children().removeClass('active');
                 jQuery('.display-space iframe').attr('src','http://indiaatsports.com/widget_participants?tournamentid=6730339196076032');
                 jQuery('#participants').addClass('active');
+                jQuery('.display-space i').removeClass('hide');
             });
             jQuery('#pointstable').click(function () {
+                jQuery('.display-space iframe').addClass('hide');
                 jQuery('.display-space nav').children().removeClass('active');
                 jQuery('.display-space iframe').attr('src','http://static.interiit.com/pages/swimming_points_table.html');
                 jQuery('#pointstable').addClass('active');
+                jQuery('.display-space i').removeClass('hide');
             });
             // jQuery('#men-pointstable').click(function () {
             //     jQuery('.display-space nav').children().removeClass('active');
@@ -86,8 +96,8 @@ export class SwimmingComponent implements OnInit, AfterViewInit{
                 var nav_height = jQuery('.display-space nav').height();
                 jQuery('.display-space i').removeClass('hide');
                 jQuery('.display-space iframe').attr('height', window_height - heading_height - nav_height - 150);
-                jQuery('.display-space nav #schedule').addClass('active');
             }
+            jQuery('#schedule').addClass('active');
         });
     };
 }

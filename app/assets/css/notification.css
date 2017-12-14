@@ -63,4 +63,10 @@
   color: black;
   font-family: "Ubuntu Light";
   font-size: 18px;
+  text-align: left;
+}
+#notification-page i.fa.fa-spinner{
+  left: calc(50% - 53px);
+  font-size: 50px;
+  color: white;
 }
