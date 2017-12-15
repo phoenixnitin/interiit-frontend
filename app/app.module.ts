@@ -32,6 +32,7 @@ import {WeightLiftingComponent} from './scheduleandresult/weightlifting/weightli
 import {WaterPoloComponent} from './scheduleandresult/waterpolo/waterpolo.component';
 import {SwimmingComponent} from './scheduleandresult/swimming/swimming.component';
 import {ContactCoreComponent} from './contactus/cores/core.component';
+import {GeneralChampionshipComponent} from './scheduleandresult/general_championship/general_championship.component';
 // import {ContactCoordComponent} from './contactus/coords/coord.component';
 import {EventComponent} from './events/events.component';
 import {MapComponent} from './map/map.component';
@@ -76,6 +77,7 @@ import {routerModule} from './app.routes';
      WeightLiftingComponent,
      WaterPoloComponent,
      SwimmingComponent,
+     GeneralChampionshipComponent,
      ContactCoreComponent,
      // ContactCoordComponent,
      MapComponent,

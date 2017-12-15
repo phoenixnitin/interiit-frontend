@@ -142,6 +142,13 @@ button{
 .weightlifting-btn{
     background: url(./app/assets/icons/weight.png);
 }
+.btn-general_champ{
+  background-color: #f3e28f;
+  height: 150px !important;
+  border-radius: 10px;
+  white-space: normal;
+  padding: 7px;
+}
 /*-----------table-----------*/
 /*.table-container{*/
   /*width: 100%;*/
