@@ -1,0 +1,185 @@
+body{
+    background-color: #63bf77;
+}
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: -10;
+}
+.wrapper .landing {
+  width: 100%;
+  height: 100%;
+        overflow: hidden;
+    min-height: 300px;
+  background-image: linear-gradient(rgba(21, 22, 29, 0.9), rgba(21, 22, 29, 0.9)), url(app/assets/back.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  transition: all 1.5s ease;
+}
+.container {
+  color: whitesmoke;
+  /*top: 90px;*/
+  text-align: center;
+  padding: 0px;
+  position: absolute;
+  min-width: fit-content;
+  min-height: -webkit-fill-available;
+    min-height: 100%;
+  height: fit-content;
+    background: rgba(21, 22, 29, .9); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(21, 22, 29, .9), rgba(31, 31, 31, 0.9)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(21, 22, 29, .9), rgba(31, 31, 31, 0.9)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(21, 22, 29, .9), rgba(31, 31, 31, 0.9)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(21, 22, 29, .9), rgba(31, 31, 31, 0.9))
+}
+.display-space{
+    margin-top: 115px;
+    width: 100%;
+    padding: 0px 40px;
+    /*margin-bottom: 20px;*/
+}
+.display-space > i{
+    /*position: absolute;*/
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
+    color: white;
+}
+.display-space nav{
+    margin-bottom: 10px;
+}
+.display-space iframe{
+    min-width: 640px;
+}
+button{
+    padding: 30px;
+    min-height: 100px;
+    font-size: 30px;
+    min-width: fit-content;
+}
+.schedule-button{
+    border-radius: 0px;
+    /*box-shadow: 5px 5px 5px #585858;*/
+    color: black;
+}
+.schedule-button:hover{
+    color: black;
+}
+.nav-buttons{
+    min-height: 0px;
+    padding: 5px;
+    font-size: inherit;
+}
+.btn-default.active, .btn-default:hover{
+    background-color: #6dcfff;
+    border-color: #4597e6;
+}
+.card{
+    margin-bottom: 50px;
+}
+.all-button{
+    background-position: center !important;
+    background-size: contain !important;
+    height: 222px !important;
+    width: 222px;
+    background-repeat: no-repeat !important;
+    background-blend-mode: darken !important;
+    text-shadow: 0px 0px 1px !important;
+}
+.all-button:focus{
+  outline: none;
+}
+.waterpolo-btn{
+    background: url(./app/assets/icons/waterpolo.png);
+}
+
+.swimming-btn{
+    background: url(./app/assets/icons/swim.png);
+}
+
+.athletics-btn{
+    background: url(./app/assets/icons/athletics.png);
+}
+
+.badminton-btn{
+    background: url(./app/assets/icons/badm.png);
+}
+
+.basketball-btn{
+    background: url(./app/assets/icons/bask.png);
+}
+
+.cricket-btn{
+    background: url(./app/assets/icons/cri.png);
+}
+
+.football-btn{
+    background: url(./app/assets/icons/foot.png);
+}
+
+.hockey-btn{
+    background: url(./app/assets/icons/hock.png);
+}
+
+.squash-btn{
+    background: url(./app/assets/icons/squa.png);
+}
+
+.tennis-btn{
+    background: url(./app/assets/icons/tenn.png);
+}
+
+.tabletennis-btn{
+    background: url(./app/assets/icons/tt.png);
+}
+
+.volleyball-btn{
+    background: url(./app/assets/icons/volley.png);
+}
+
+.weightlifting-btn{
+    background: url(./app/assets/icons/weight.png);
+}
+.btn-general_champ{
+  background-color: #f3e28f;
+  height: 150px !important;
+  border-radius: 10px;
+  white-space: normal;
+  padding: 7px;
+}
+/*-----------table-----------*/
+/*.table-container{*/
+  /*width: 100%;*/
+  /*border: 2px solid;*/
+/*}*/
+table{
+  width: 100%;
+  /*margin: 15px;*/
+  /*text-align: center;*/
+  /*border: 2px solid;*/
+  color: white;
+}
+th, td{
+  text-align: center;
+  vertical-align: middle !important;
+}
+th{
+  background-color: #62c0ee;
+  color: #202020;
+}
+.men-rows, .women-rows{
+ background-color: #202020;
+ color: #62c0ee;
+}
+.men-rows:hover, .women-rows:hover {
+  background-color: #616161;
+}
+tbody{
+  padding: 5px;
+}
+.iit_name img{
+  height:26px;
+}
+/*-----------table-----------*/

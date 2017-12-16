@@ -1,0 +1,75 @@
+<!--Desktop Navigation-->
+  <span class="desktop">
+    <header class="all-heading">
+      <span id="logo" class="col-xs-12 col-sm-12 col-lg-6"><a [routerLink]="['/home']"><img src="./app/assets/interiit_logo_main.png"></a>52ND INTER IIT SPORTS MEET</span>
+      <nav class="col-xs-12 col-sm-12 col-lg-6">
+        <a [routerLink]="['/live']"><i class="fa fa-circle color-red live-status" aria-hidden="true"></i>Live</a>
+        <a style="top:6px;" [routerLink]="['/notifications']"><i class="ion-ios-bell customBell" aria-hidden="true"></i></a>
+        <a [routerLink]="['/home']">Home</a>
+        <!--<a [routerLink]="['/sports']">Sports</a>-->
+        <a [routerLink]="['/gallery']">Gallery</a>
+        <!--<a [routerLink]="['/sponsorship']">Sponsorship</a>-->
+        <a [routerLink]="['/events']">Events</a>
+        <a [routerLink]="['/socialcampaign']">Social Campaign</a>
+        <a [routerLink]="['/scheduleandresults']">Schedule and Results</a>
+        <a [routerLink]="['/contactus']">Contacts</a>
+        <a [routerLink]="['/maps']">Maps</a>
+      </nav>
+    </header>
+  </span>
+
+  <!--Mobile Navigation-->
+  <span class="mobile">
+    <header class="all-heading">
+        <span id="logo"><a [routerLink]="['/home']"><img src="./app/assets/interiit_logo_main.png"></a>52ND Inter IIT Sports Meet </span>
+        <div id="golive">
+          <a [routerLink]="['/live']"><i class="fa fa-circle color-red live-status" aria-hidden="true"></i>Live</a>
+        </div>
+      
+      <div id="notificationBell">
+        <a [routerLink]="['/notifications']"><i class="ion-ios-bell customBell"></i></a>
+      </div>
+
+      <div id="menuButton" (click)="toggleMenu()" class="button_container">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </div>
+    </header>
+
+    <div id="menuOverlay" class="overlay all-heading">
+      <nav>
+        <ul>
+          <li (click)="toggleMenu()"><a [routerLink]="['/home']">Home</a></li>
+          <!--<li (click)="toggleMenu()"><a [routerLink]="['/sports']">Sports</a></li>-->
+          <li (click)="toggleMenu()"><a [routerLink]="['/gallery']">Gallery</a>
+          <li (click)="toggleMenu()"><a [routerLink]="['/events']">Events</a>
+          <li (click)="toggleMenu()"><a [routerLink]="['/socialcampaign']">Social Campaign</a>
+          <li (click)="toggleMenu()"><a [routerLink]="['/sponsors']">Sponsors</a></li>
+          <li (click)="toggleMenu()"><a [routerLink]="['/scheduleandresults']">Schedule and Results</a></li>
+          <li (click)="toggleMenu()"><a [routerLink]="['/contactus']">Contacts</a></li>
+          <li (click)="toggleMenu()"><a [routerLink]="['/maps']">Maps</a></li>
+        </ul>
+      </nav>
+    </div>
+  </span>
+
+<!--Notification-->
+
+<div id="notifications" *ngIf="notificationShow">
+        
+    <h3>Notifications</h3>
+        
+
+  <div class="list-group">
+    <a [href]="update.link"
+        class="list-group-item"
+        *ngFor="let update of updates"
+        style="background-color: #333333; color: white;"
+    >
+        {{update.name}}
+        <span class="badge">{{update.date}}</span>
+    </a>
+    
+  </div>
+</div>

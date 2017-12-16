@@ -1,0 +1,16 @@
+.container{
+    position: relative;
+    top: 150px;
+    min-width: 320px;
+}
+#gallery-nav{
+    text-align: center;
+    padding-left: 3%;
+}
+.btn-default.active, .btn-default:hover{
+    background-color: #6dcfff;
+    border-color: #4597e6;
+}
+.btn-default > a{
+    color: black;
+}
