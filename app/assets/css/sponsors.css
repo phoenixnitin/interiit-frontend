@@ -1,0 +1,21 @@
+.container{
+    position: relative;
+    top: 110px;
+    margin-bottom: 30px;
+    color: #dedede;
+}
+.center {
+    text-align: center;
+}
+.white-text{
+    color: white;
+}
+.goldsilver{
+    /*border: 2px solid white;*/
+    margin-top: 50px;
+}
+.logo{
+    width: 100%;
+    margin-left: calc(50% - width/2);
+    background-color: white;
+}

@@ -38,6 +38,7 @@ import {EventComponent} from './events/events.component';
 import {MapComponent} from './map/map.component';
 import {SocialCampaignComponent} from './socialcampaign/socialcampaign';
 import {LiveComponent} from './live/live.component';
+import {SponsorsComponent} from './sponsors/sponsors.component';
 
 import {routerModule} from './app.routes';
 
@@ -83,7 +84,8 @@ import {routerModule} from './app.routes';
      MapComponent,
      EventComponent,
      SocialCampaignComponent,
-     LiveComponent
+     LiveComponent,
+     SponsorsComponent
       ],
   providers:[
      UpdateService,
