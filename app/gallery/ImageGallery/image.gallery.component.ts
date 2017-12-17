@@ -27,7 +27,12 @@ showClick = true;
                                     this.imageArray = res.json().Image;
                                     jQuery(document).ready(() => {
                                         // console.log("help");
-                                        jQuery(".fancybox").fancybox({
+                                        this.initFancy();
+                                    });
+                                });
+    }
+    initFancy(){
+      jQuery(".fancybox").fancybox({
                                             type: 'image',
                                             helpers : {
                                                 title: {
@@ -35,14 +40,17 @@ showClick = true;
                                                 }
                                             }
                                         });
-                                    });
-                                });
     }
     clickMore(){
       this.imageCounter = this.imageCounter + 20;
       if(this.imageCounter > this.imageArray.length){
         this.showClick = false;
       }
+      let that = this;
+      window.setTimeout(function () {
+        that.initFancy();
+        // console.log('function called');
+      },500);
     }
 
 }
