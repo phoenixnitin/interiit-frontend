@@ -31,7 +31,8 @@ export class NavbarComponent {
     toggleMenu() {
       jQuery('.button_container').toggleClass('active');
       jQuery('.overlay').toggleClass('open');
-      jQuery('body').toggleClass('active');
+      jQuery('body').toggleClass('active overflowHide');
+
     };
 
     notification(){

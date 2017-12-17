@@ -19,3 +19,7 @@
     margin-left: calc(50% - width/2);
     background-color: white;
 }
+img{
+  max-width: 350px;
+  margin: auto;
+}

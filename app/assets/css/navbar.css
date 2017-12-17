@@ -218,7 +218,7 @@
   .overlay nav {
     position: relative;
     height: 70%;
-    top: 50%;
+    top: 265px;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     font-size: 40px;
@@ -267,6 +267,9 @@
     background: #FFF;
     -webkit-transition: .35s;
     transition: .35s;
+  }
+  .overlay ul li:last-child{
+    margin-bottom: 20px;
   }
   @-webkit-keyframes fadeInTop {
     0% {
@@ -408,4 +411,7 @@
   -moz-animation:    animate-live 2s infinite; /* Fx 5+ */
   -o-animation:      animate-live 2s infinite; /* Opera 12+ */
   animation:         animate-live 2s infinite; /* IE 10+, Fx 29+ */
+}
+#menuOverlay{
+  overflow: scroll;
 }
