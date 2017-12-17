@@ -1,7 +1,7 @@
 
 /*Desktop navigation*/
 
-@media screen and (min-width: 1580px) {
+@media screen and (min-width: 1710px) {
   .mobile {
     display: none;
   }
@@ -73,7 +73,7 @@
 
 /*Mobile*/
 
-@media screen and (max-width: 1579px) {
+@media screen and (max-width: 1709px) {
   .desktop {
     display: none;
   }

@@ -85,7 +85,7 @@ import {routerModule} from './app.routes';
      EventComponent,
      SocialCampaignComponent,
      LiveComponent,
-     SponsorsComponent
+     SponsorsComponent,
       ],
   providers:[
      UpdateService,
