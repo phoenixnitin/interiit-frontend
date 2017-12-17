@@ -41,6 +41,7 @@ import {LiveComponent} from './live/live.component';
 import {SponsorsComponent} from './sponsors/sponsors.component';
 
 import {routerModule} from './app.routes';
+import {TodayEventComponent} from './scheduleandresult/today_events/today_events.component';
 
 
 @NgModule({
@@ -86,6 +87,7 @@ import {routerModule} from './app.routes';
      SocialCampaignComponent,
      LiveComponent,
      SponsorsComponent,
+     TodayEventComponent,
       ],
   providers:[
      UpdateService,

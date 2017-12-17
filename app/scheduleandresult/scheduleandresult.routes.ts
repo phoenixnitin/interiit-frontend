@@ -16,6 +16,7 @@ import {WaterPoloComponent} from './waterpolo/waterpolo.component';
 import {SwimmingComponent} from './swimming/swimming.component';
 import {UpdateSoonComponent} from '../updated_soon/update_soon.component';
 import {GeneralChampionshipComponent} from './general_championship/general_championship.component';
+import {TodayEventComponent} from './today_events/today_events.component';
 export const SCHEDULEANDRESULT_ROUTES: Routes = [
     {path: '', component:RootComponent},
     {path: 'waterpolo', component: WaterPoloComponent},
@@ -33,4 +34,5 @@ export const SCHEDULEANDRESULT_ROUTES: Routes = [
     {path: 'waterpolo', component: UpdateSoonComponent},
     {path: 'swimming', component: SwimmingComponent},
     {path: 'general-championship', component: GeneralChampionshipComponent},
+    {path: 'today-event', component: TodayEventComponent}
 ];

@@ -77,7 +77,7 @@ button{
     border-color: #4597e6;
 }
 .card{
-    margin-bottom: 50px;
+    margin: 0 auto 50px auto;
 }
 .all-button{
     background-position: center !important;
