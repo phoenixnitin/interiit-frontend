@@ -23,6 +23,9 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
 }
+#notification-page .container{
+  min-width: 340px;
+}
 .left{
   float: left;
 }
