@@ -13,6 +13,7 @@ import {Http} from '@angular/http';
 export class NavbarComponent {
     Width; 
     Height;
+    livestatus= false;
 
     notificationShow = false;
 
@@ -51,7 +52,14 @@ export class NavbarComponent {
                             });
     }
   toggleLive(data){
-    if(data[0].Status == 'online'){
+    let count =0;
+    for(let i=0;i<data.length;i++){
+      if(data[i].Status == 'online'){
+        count++;break;
+      }
+    }
+    this.livestatus = (count == 0 )? false : true;
+    if(this.livestatus == true){
       jQuery('.live-status').removeClass('color-red').addClass('color-green');
     }
     else{
