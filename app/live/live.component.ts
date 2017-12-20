@@ -15,39 +15,50 @@ import {DomSanitizer} from '@angular/platform-browser';
 //if object.Src that is Src property of that object is empty string then iframeSrc variable wont change...
 //also if object.Src is same as iframeSrc then it wont change....
 
-export class LiveComponent implements OnInit{
+export class LiveComponent{
     data: Array<object>;
-    iframeObj="";
-    iframeObjPre="";
-
-    // iframeSrc = "http://clappr.akamain.info:5698/Player.html?url=http://webtv.akamain.info:1935/7384/7384/playlist.m3u8";
-    // status;
-    // title;
-    // participant;
-    // score;
-    // description;
-    ngOnInit(){
-      this.loadlive();
-    };
+    loadeddata: Array<object>;
+    c = -1;
+    santurl=[];
     constructor(public sanitizer: DomSanitizer ,private _http: Http){
       let that = this;
+      this._http.get('https://script.google.com/macros/s/AKfycbygukdW3tt8sCPcFDlkMnMuNu9bH5fpt7bKV50p2bM/exec?id=1aqljoEV1kLxP8ZtzsW3Cqj8-L72Q79trNJcsNM5B_Lo&sheet=livedata').
+          subscribe(res => {
+            this.data = res.json().livedata;
+            this.loadeddata = res.json().livedata;
+      });
       jQuery(document).ready(function () {
         // window.dataLayer = window.dataLayer || [];
         // function gtag(){dataLayer.push(arguments);}
         // gtag('js', new Date());
         //
         // gtag('config', 'UA-74140602-1');
-        // that.loadlive();
         window.setInterval(function () {
           that.loadlive();
         }, 5000);
       });
     }
-
+    geturl(id,index){
+    if(this.c<index){
+    this.c= index;
+    this.santurl[index]=this.sanitizer.bypassSecurityTrustResourceUrl(id);
+    return this.santurl[index]
+    }
+    else{
+      return this.santurl[index];
+    }
+  }
     loadlive(){
       this._http.get('https://script.google.com/macros/s/AKfycbygukdW3tt8sCPcFDlkMnMuNu9bH5fpt7bKV50p2bM/exec?id=1aqljoEV1kLxP8ZtzsW3Cqj8-L72Q79trNJcsNM5B_Lo&sheet=livedata')
                             .subscribe(res => {
                                 this.data = res.json().livedata;
+                                // if(!this.loadeddata){
+                                //   for(let i =0;i<this.data.length;i++){
+                                //     this.loadeddata.push(this.sanitizer.bypassSecurityTrustResourceUrl(this.data[i]['embedURL']));
+                                //   }
+                                //   // this.loadeddata = this.data;
+                                //   console.log('initialized');
+                                // }
                                 // console.log(this.data[1]);
                                 // this.data.forEach((object) => {
                                 //   if(this.data[0].Status == "online" && this.iframeObj != this.data[0].iframeObj){
@@ -58,32 +69,32 @@ export class LiveComponent implements OnInit{
                                 //   }
                                   // else return;
                                 // });
-                                this.filldata(this.data[0]);
+                                // this.filldata(this.data[0]);
                             });
     }
-    filldata(data){
-      if(data.Status == 'online') {
-        jQuery('#title h2').html(data.SportName);
-        jQuery('#participant h2').html(data.Participant);
-        jQuery('#score h2').html(data.Score);
-        jQuery('#description h3').html(data.Description);
-        jQuery('#livecontainer-alt').addClass('hide');
-        jQuery('#livecontainer').removeClass('hide');
-      }
-      else{
-        // jQuery('#iframe-container').addClass('hide');
-        jQuery('#livecontainer-alt').removeClass('hide');
-        // jQuery('#iframe-object').remove();
-        if(data.showText == 'on'){
-          jQuery('#title h2').html(data.SportName);
-          jQuery('#participant h2').html(data.Participant);
-          jQuery('#score h2').html(data.Score);
-          jQuery('#description h3').html(data.Description);
-          jQuery('#livecontainer').removeClass('hide');
-        }
-        else{
-          jQuery('#livecontainer').addClass('hide');
-        }
-      }
-    }
+    // filldata(data){
+    //   if(data.Status == 'online') {
+    //     jQuery('#title h2').html(data.SportName);
+    //     jQuery('#participant h2').html(data.Participant);
+    //     jQuery('#score h2').html(data.Score);
+    //     jQuery('#description h3').html(data.Description);
+    //     jQuery('#livecontainer-alt').addClass('hide');
+    //     jQuery('#livecontainer').removeClass('hide');
+    //   }
+    //   else{
+    //     // jQuery('#iframe-container').addClass('hide');
+    //     jQuery('#livecontainer-alt').removeClass('hide');
+    //     // jQuery('#iframe-object').remove();
+    //     if(data.showText == 'on'){
+    //       jQuery('#title h2').html(data.SportName);
+    //       jQuery('#participant h2').html(data.Participant);
+    //       jQuery('#score h2').html(data.Score);
+    //       jQuery('#description h3').html(data.Description);
+    //       jQuery('#livecontainer').removeClass('hide');
+    //     }
+    //     else{
+    //       jQuery('#livecontainer').addClass('hide');
+    //     }
+    //   }
+    // }
 }

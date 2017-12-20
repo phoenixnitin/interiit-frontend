@@ -1,16 +1,18 @@
 <div class="container">
-  <div id="livecontainer">
-    <div id="title">
-      <h2></h2>
+  <div class="livecontainer" *ngFor="let d of loadeddata; let i = index">
+    <div class="paddingandmargin" *ngIf="data[i]['SportName'] == 'online' || data[i]['showText'] == 'on'">
+    <div class="title">
+      <h2 [innerHtml]="data[i]['SportName']"></h2>
     </div>
-    <div id="iframe-object">
-      <iframe width="854" height="480" src="https://www.youtube.com/embed/live_stream?channel=UCF9MpmTR7MBjFj8t426aA3w" frameborder="0" allowfullscreen></iframe>
+    <div class="iframe-object" *ngIf="d['embedURL']">
+      ​​<iframe allowfullscreen="" frameborder="0" scrolling="no" [src]="geturl(d['embedURL'],i)" style="border:0;outline:0"></iframe>​
     </div>
-    <div id="participant">
-      <h2></h2>
+    <div class="participant">
+      <h2 [innerHtml]="data[i]['Participant']"></h2>
     </div>
-    <div id="score"><h2></h2></div>
-    <div id="description"><h3></h3></div>
+    <div class="score"><h2 [innerHtml]="data[i]['Score']"></h2></div>
+    <div class="description"><h3 [innerHtml]="data[i]['Description']"></h3></div>
+    </div>
   </div>
-  <!--<div id="livecontainer-alt" class="hide"><h2>Live stream is not available now. Please check back soon.</h2></div>-->
+  <!--<div class="livecontainer-alt" class="hide"><h2>Live stream is not available now. Please check back soon.</h2></div>-->
 </div>

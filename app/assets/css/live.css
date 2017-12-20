@@ -7,3 +7,43 @@
     text-align: center;
 
 }
+.livecontainer{
+    background-color: #fdad59;
+    border-radius: 5px;
+    color: black;
+}
+.paddingandmargin{
+  padding: 10px;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 720px){
+  .livecontainer iframe{
+    width: 650px !important;
+    height: 450px !important;
+  }
+}
+
+@media screen and (min-width: 611px) and (max-width: 719px){
+  .livecontainer iframe{
+    width: 598px !important;
+    height: 414px !important;
+  }
+}
+@media screen and (min-width: 507px) and (max-width: 610px){
+  .livecontainer iframe{
+    width: 494px !important;
+    height: 351px !important;
+  }
+}
+@media screen and (min-width: 417px) and (max-width: 506px){
+  .livecontainer iframe{
+    width: 403px !important;
+    height: 279px !important;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 416px){
+  .livecontainer iframe{
+    width: 312px !important;
+    height: 216px !important;
+  }
+}
