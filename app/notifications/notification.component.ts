@@ -10,7 +10,7 @@ import { Http } from '@angular/http';
 export class NotificationComponent{
     notification: Array<object>;
     constructor(private _http: Http){
-      this._http.get('https://script.google.com/macros/s/AKfycbygukdW3tt8sCPcFDlkMnMuNu9bH5fpt7bKV50p2bM/exec?id=1vyh9pK7QJjwZxgRvXxhVKaxJV0y8VACcvm4Y5v9KxEM&sheet=Notification')
+      this._http.get('https://script.google.com/macros/s/AKfycbwX7x2MJxOBJe2muzWr1SVS093M7EQzDnnGpi_q5PJw4MBK-uye/exec?id=1vyh9pK7QJjwZxgRvXxhVKaxJV0y8VACcvm4Y5v9KxEM&sheet=Notification')
                   .subscribe(res => {
                     this.notification = res.json().Notification;
                     console.log(this.notification);
